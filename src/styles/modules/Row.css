@@ -1,0 +1,41 @@
+.Row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.Row_md-1 {
+  flex-basis: 8%;
+}
+.Row_md-2 {
+  flex-basis: 16%;
+}
+.Row_md-2 {
+  flex-basis: 25%;
+}
+.Row_md-4 {
+  flex-basis: 33%;
+}
+.Row_md-5 {
+  flex-basis: 41%;
+}
+.Row_md-6 {
+  flex-basis: 50%;
+}
+.Row_md-7 {
+  flex-basis: 58%;
+}
+.Row_md-8 {
+  flex-basis: 66%;
+}
+.Row_md-9 {
+  flex-basis: 75%;
+}
+.Row_md-10 {
+  flex-basis: 83%;
+}
+.Row_md-11 {
+  flex-basis: 91%;
+}
+.Row_md-12 {
+  flex-basis: 100%;
+}

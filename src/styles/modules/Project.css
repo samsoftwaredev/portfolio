@@ -1,0 +1,22 @@
+.Projects-bg {
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Project {
+  background: #111;
+  color: #fff;
+  flex-grow: 1;
+  margin: 0.5em;
+  padding: 1.5em;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  box-shadow: -7px 9px 8px -3px rgba(0, 0, 0, 0.75);
+}
