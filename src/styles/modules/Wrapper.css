@@ -1,0 +1,31 @@
+:global .wrapper {
+  padding: 5em 1em;
+}
+:global .wrapper-sm {
+  padding: 5em 5%;
+}
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  :global .wrapper {
+    padding: 5em 3em;
+  }
+  :global .wrapper-sm {
+    padding: 5em 5%;
+  }
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  :global .wrapper-sm {
+    padding: 5em 10%;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  :global .wrapper {
+    padding: 5em 8em;
+  }
+  :global .wrapper-sm {
+    padding: 5em 20%;
+  }
+}

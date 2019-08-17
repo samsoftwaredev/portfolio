@@ -8,14 +8,18 @@
   display: inline-block;
   font-size: 16px;
   box-shadow: -4px 6px 8px -4px rgba(0, 0, 0, 0.7);
-  opacity: 1;
   border-radius: 50px;
 }
 
 .Button:hover {
-  opacity: 0.8;
+  cursor: pointer;
 }
-.Button_warning {
+.Button:disabled {
+  color: rgb(141, 141, 141);
+  cursor: not-allowed;
+}
+
+.ButtonWarning {
   background: rgb(2, 0, 36);
   background: linear-gradient(
     51deg,
@@ -23,14 +27,14 @@
     rgba(255, 213, 0, 1) 100%
   );
 }
-.Button_danger {
+.ButtonDanger {
   background: linear-gradient(
     51deg,
     rgba(56, 15, 15, 1) 0%,
     rgba(194, 0, 0, 1) 100%
   );
 }
-.Button_success {
+.ButtonSuccess {
   background: rgb(2, 0, 36);
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -39,7 +43,7 @@
     rgba(92, 194, 0, 1) 100%
   );
 }
-.Button_info {
+.ButtonInfo {
   background: rgb(2, 0, 36);
   background: linear-gradient(
     51deg,
@@ -47,6 +51,6 @@
     rgba(0, 212, 255, 1) 100%
   );
 }
-.Button_primary {
+.ButtonPrimary {
   background-color: #3f51b5;
 }

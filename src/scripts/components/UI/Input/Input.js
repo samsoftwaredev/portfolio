@@ -1,23 +1,56 @@
 import React from "react";
-import { prependOnceListener } from "cluster";
+import classes from "./Input.css";
 
 const input = props => {
   let inputElement = null;
-  switch (porps.inputType) {
+
+  switch (props.elementType) {
     case "input":
-      inputElement = <input {...props} />;
+      inputElement = (
+        <input
+          {...props.elementConfig}
+          value={props.value}
+          onChange={props.changed}
+        />
+      );
       break;
     case "textarea":
-      inputElement = <textarea {...props} />;
+      inputElement = (
+        <textarea
+          {...props.elementConfig}
+          value={props.value}
+          onChange={props.changed}
+        />
+      );
+      break;
+    case "tel":
+      inputElement = (
+        <input
+          {...props.elementConfig}
+          value={props.value}
+          onChange={props.changed}
+        />
+      );
       break;
     case "section":
-      inputElement = <input {...props} />;
+      //   <input
+      //     {...props.elementConfig}
+      //     value={props.value}
+      //     onChange={props.changed}
+      //   />;
       break;
     default:
+      inputElement = (
+        <input
+          {...props.elementConfig}
+          value={props.value}
+          onChange={props.changed}
+        />
+      );
   }
   return (
-    <div>
-      <label />
+    <div className={[classes.InputSpace, props.classes].join(" ")}>
+      <label>{props.label}</label>
       {inputElement}
     </div>
   );

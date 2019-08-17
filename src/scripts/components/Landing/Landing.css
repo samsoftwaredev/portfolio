@@ -1,0 +1,111 @@
+.LandingContainer {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.LandingVideoContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+@media (min-width: 320px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .LandingVideoContainer {
+    left: calc(50% - (320px * 2));
+  }
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .LandingVideoContainer {
+    left: calc(50% - (480px * 2));
+  }
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .LandingVideoContainer {
+    left: calc(50% - 600px);
+  }
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .LandingVideoContainer {
+    left: 0;
+  }
+}
+
+.LandingTextContainer {
+  color: #fff;
+  align-items: center;
+  padding: 4%;
+}
+.LandingTitle {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+}
+.LandingSubTitle {
+  text-align: center;
+  font-size: 1.5em;
+}
+.LandingBtnAction {
+  text-align: center;
+}
+.LandingBtn {
+  margin: 1em;
+  padding: 1em 2em;
+  border-radius: 50px;
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+  background: rgb(131, 58, 180);
+  box-shadow: -4px 6px 8px -4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  transition: 1s;
+}
+.LandingBtn:hover {
+  color: white;
+  box-shadow: -6px 8px 10px -1px rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .LandingTitle {
+    font-size: 3.5em;
+  }
+  .LandingSubTitle {
+    font-size: 2em;
+  }
+  .LandingTextContainer {
+    padding: 0;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  .LandingTitle {
+    font-size: 4em;
+  }
+  .LandingSubTitle {
+    font-size: 2.5em;
+  }
+  .LandingTextContainer {
+    padding: 0;
+  }
+}

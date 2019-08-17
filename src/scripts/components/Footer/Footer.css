@@ -1,0 +1,34 @@
+.Footer {
+  background-color: #111;
+  color: rgb(175, 175, 175);
+}
+.FooterList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.FooterListItem {
+}
+
+.FooterListLink {
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.FooterListLink:hover,
+.FooterListLink:active {
+  color: rgb(255, 255, 255);
+}
+.FooterListLink:visited {
+  color: rgb(252, 70, 107);
+}
+.Logo {
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
+}
+
+@media (min-width: 600px) {
+  .Logo {
+    margin-top: 0px;
+  }
+}

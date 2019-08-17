@@ -1,4 +1,18 @@
-.Input {
+.InputSpace {
+  margin: 1em 0;
+}
+input,
+textarea {
   width: 100%;
-  padding: 10px;
+  padding: 0.9em 0.7em;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  padding-left: 1em;
+}
+
+input:focus {
+  border: 3px solid #555;
 }

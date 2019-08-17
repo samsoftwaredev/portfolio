@@ -1,0 +1,63 @@
+.AboutContainer {
+  position: relative;
+  color: white;
+}
+.AboutContainerBg {
+  background: linear-gradient(
+    90deg,
+    rgba(158, 114, 187, 0.6) 0%,
+    rgba(131, 58, 180, 0.7) 100%
+  );
+}
+
+.AboutTextContainer {
+  /* order: 20; */
+}
+.AboutSkillsContainer {
+  /* order: 30; */
+}
+.AboutPictureContainer {
+  /* order: 10; */
+}
+
+.AboutSkills {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.AboutSkill {
+  font-weight: 900;
+}
+
+.AboutPicture {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: -7px 9px 8px -3px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .AboutContainerBg {
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
+    /* background: rgb(131, 58, 180);
+    background: linear-gradient(
+      178deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(255, 17, 17, 0.9) 26%,
+      rgba(252, 176, 69, 1) 79%,
+      rgba(17, 17, 17, 1) 80%
+    ); */
+  }
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
