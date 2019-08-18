@@ -70,7 +70,7 @@ class App extends Component {
           "Mobile version of AlliesPro, now more accessible to users.",
         url: "",
         duration: "2 weeks",
-        languages: "HTML, CSS, Javascript, React.js and React Native",
+        languages: "HTML, CSS, Javascript, React.js, Webpack and React Native",
         status: "Currently under development"
       },
       {
