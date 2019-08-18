@@ -200,17 +200,36 @@ class Contact extends Component {
     }
     console.log(newObj);
     axios
-      .post("https://samsportfolio-749ec.firebaseio.com/contact.json", newObj)
+      .post("https://samsportfolio-749ec.firebaseio.com/contact.json", {
+        ...newObj,
+        date: new Date().toJSON()
+      })
       .then(res => {
         console.log(res);
         this.showLodingIcon(false);
         this.setState({
           modal: {
             ...this.state.modal,
-            message: `Thank you for your interest in contacting me! I have received your information and I will contact you
-        shortly.`
+            message: `Thank you for your interest in contacting me! 
+            I have received your information and I will contact you shortly.`
           }
         });
+        //clear text fields
+        for (let field in this.state.form.fields) {
+          this.setState({
+            ...this.state,
+            form: {
+              ...this.state.form,
+              fields: {
+                ...this.state.form.fields,
+                [field]: {
+                  ...this.state.form.fields[field],
+                  value: ""
+                }
+              }
+            }
+          });
+        }
       })
       .catch(err => {
         console.log(err);
