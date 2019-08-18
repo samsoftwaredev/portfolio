@@ -46,7 +46,7 @@ class App extends Component {
         languages:
           "HTML, CSS, Javascript, Vue, Nuxt.js, Node.js, Firebase and other third-party APIs",
         status:
-          "The software is continuously evolving. We are planning on adding new features soon."
+          "The software is continuously evolving. I'm planning on adding new features soon."
       },
       {
         title: "Momapp",
@@ -54,15 +54,15 @@ class App extends Component {
         url: "https://pacific-springs-18263.herokuapp.com",
         duration: "4 days",
         languages: "HTML, CSS, Javascript and Vue",
-        status: "finish"
+        status: "Finished"
       },
       {
         title: "Sam's Portfolio",
-        description: "Website design to showcase my work and potential",
+        description: "Website designed to showcase my work and potential",
         url: window.location.hostname,
         duration: "1 day",
         languages: "HTML, CSS, Javascript, React and Redux",
-        status: "finish"
+        status: "Finished"
       },
       {
         title: "AlliesPro Mobile App",
@@ -71,7 +71,7 @@ class App extends Component {
         url: "",
         duration: "2 weeks",
         languages: "HTML, CSS, Javascript, React.js and React Native",
-        status: "Currently on development"
+        status: "Currently under development"
       },
       {
         title: "FITHER (Game)",
