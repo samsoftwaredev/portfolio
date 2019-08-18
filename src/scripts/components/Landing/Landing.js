@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Landing.css";
-import CodingVideo from "../../../assets/videos/coding.mp4";
+import CodingVideoMP4 from "../../../assets/videos/coding.mp4";
+import CodingVideoOGG from "../../../assets/videos/coding.ogg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const landing = props => {
@@ -9,8 +10,13 @@ const landing = props => {
       <video className={classes.LandingVideoContainer} autoPlay loop>
         <source
           className={classes.LandingVideo}
-          src={CodingVideo}
+          src={CodingVideoMP4}
           type="video/mp4"
+        />
+        <source
+          className={classes.LandingVideo}
+          src={CodingVideoOGG}
+          type="video/ogv"
         />
         Your browser does not support HTML5 video.
       </video>

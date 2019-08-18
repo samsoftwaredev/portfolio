@@ -33,41 +33,50 @@ class App extends Component {
     projects: [
       {
         title: "AlliesPro",
-        description: "Helping freelancers get paid on time.",
+        description: `AlliesPro is a gig search and payment company. Founded by former 
+        freelancers who wanted to keep more of their payments and get more clients. What 
+        started off as a simple chat to send and receive money has evolved into a payment 
+        system that allows freelancers and clients to match, collaborate, and securely make 
+        money transactions Freelancers can apply to gigs around their area and get paid on
+         time. Furthermore, freelance seekers can post jobs and send money. All of this is
+          brought together in one easy-to-use and beautifully designed website– all of this
+           while making these process more fun and less awkward.`,
         url: "https://www.alliespro.com",
         duration: "2 years",
         languages:
-          "HTML, CSS, Javascript, Vue.js, Nuxt.js, Node.js, Firebase and other third party APIs",
-        status: "currently on development"
+          "HTML, CSS, Javascript, Vue, Nuxt.js, Node.js, Firebase and other third-party APIs",
+        status:
+          "The software is continuously evolving. We are planning on adding new features soon."
       },
       {
         title: "Momapp",
-        description: "Helps users writer faster client's records.",
+        description: "Helps users write faster records for their clients.",
         url: "https://pacific-springs-18263.herokuapp.com",
         duration: "4 days",
-        languages: "HTML, CSS, Javascript and Vue.js",
+        languages: "HTML, CSS, Javascript and Vue",
         status: "finish"
       },
       {
         title: "Sam's Portfolio",
-        description: "Showcase my work and projects",
+        description: "Website design to showcase my work and potential",
         url: window.location.hostname,
         duration: "1 day",
-        languages: "HTML, CSS, Javascript, React.js and Redux",
+        languages: "HTML, CSS, Javascript, React and Redux",
         status: "finish"
       },
       {
         title: "AlliesPro Mobile App",
-        description: "Helping freelancers getting paid more conveniently.",
+        description:
+          "Mobile version of AlliesPro, now more accessible to users.",
         url: "",
         duration: "2 weeks",
-        languages: "HTML, CSS, Javascript, React.js, React Native",
-        status: "Working Progress"
+        languages: "HTML, CSS, Javascript, React.js and React Native",
+        status: "Currently on development"
       },
       {
-        title: "Obesity Game",
+        title: "FITHER (Game)",
         description:
-          "Game that helps girls change their life style behaviors such as eating and execersing",
+          "The Office on Women’s Health (OWH) is seeking new ways to get health messages out to women and girls. According to the CDC, two out of every three women in the United States are overweight or obese1. This extra weight can lead to many diseases, such as heart disease, diabetes, and many cancers. Obesity results from a combination of causes and contributing factors, including individual factors such as behavior and genetics. Some examples of behaviors that affect weight include diet, physical activity, inactivity, and stress. Improving behaviors in these areas can help women and girls maintain a healthy weight. Video games are a unique medium to boost knowledge and skills and can lead to behavior change through exploration of cause and effect in a virtual environment.",
         url: "",
         duration: "3 months",
         languages: "JavaScript, Unity",
