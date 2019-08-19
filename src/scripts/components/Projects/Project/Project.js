@@ -11,7 +11,7 @@ const project = props => {
       <p>Duration: {props.duration}</p>
       <p>Languages: {props.languages}</p>
       <Button btnType="ButtonInfo" clicked={props.click} disabled={!props.url}>
-        View
+        View Project
       </Button>
     </div>
   );

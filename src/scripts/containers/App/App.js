@@ -18,7 +18,7 @@ class App extends Component {
         "To offer a valuable grasp of technologies with years of strong academic performance and hands-on programming experience for the success of any entity with the use of OOP, data structures, programming patterns, intuitive design, and efficient algorithms.",
       profession: "Front End Web Developer / Software Engineer",
       img: SamuelPicture,
-      skills: ["JavaScript", "React", "Redux", "Vue.js", "HTML", "CSS"],
+      skills: ["JavaScript", "React", "Redux", "Vue", "HTML", "CSS"],
       socialMedia: [
         {
           name: "LinkedIn",
@@ -44,7 +44,7 @@ class App extends Component {
         url: "https://www.alliespro.com",
         duration: "2 years",
         languages:
-          "HTML, CSS, Javascript, Vue, Nuxt.js, Node.js, Firebase and other third-party APIs",
+          "HTML, CSS, JavaScript, Vue, Nuxt.js, Node.js, Firebase and other third-party APIs.",
         status:
           "The software is continuously evolving. I'm planning on adding new features soon."
       },
@@ -53,7 +53,7 @@ class App extends Component {
         description: "Helps users write faster records for their clients.",
         url: "https://pacific-springs-18263.herokuapp.com",
         duration: "4 days",
-        languages: "HTML, CSS, Javascript and Vue",
+        languages: "HTML, CSS, JavaScript and Vue.",
         status: "Finished"
       },
       {
@@ -61,7 +61,7 @@ class App extends Component {
         description: "Website designed to showcase my work and potential",
         url: window.location.hostname,
         duration: "1 day",
-        languages: "HTML, CSS, Javascript, React and Redux",
+        languages: "HTML, CSS, JavaScript and React.",
         status: "Finished"
       },
       {
@@ -70,17 +70,27 @@ class App extends Component {
           "Mobile version of AlliesPro, now more accessible to users.",
         url: "",
         duration: "2 weeks",
-        languages: "HTML, CSS, Javascript, React.js, Webpack and React Native",
+        languages: "HTML, CSS, JavaScript, React, Webpack and React Native.",
         status: "Currently under development"
       },
       {
-        title: "FITHER (Game)",
-        description:
-          "The Office on Women’s Health (OWH) is seeking new ways to get health messages out to women and girls. According to the CDC, two out of every three women in the United States are overweight or obese1. This extra weight can lead to many diseases, such as heart disease, diabetes, and many cancers. Obesity results from a combination of causes and contributing factors, including individual factors such as behavior and genetics. Some examples of behaviors that affect weight include diet, physical activity, inactivity, and stress. Improving behaviors in these areas can help women and girls maintain a healthy weight. Video games are a unique medium to boost knowledge and skills and can lead to behavior change through exploration of cause and effect in a virtual environment.",
+        title: "Fither (Game)",
+        description: `The Office on Women’s Health (OWH) is seeking new ways to get
+           health messages out to women and girls. According to the CDC, 
+           two out of every three women in the United States are overweight
+            or obese1. This extra weight can lead to many diseases, such as 
+            heart disease, diabetes, and many cancers. Obesity results from 
+            a combination of causes and contributing factors, including individual 
+            factors such as behavior and genetics. Some examples of behaviors that 
+            affect weight include diet, physical activity, inactivity, and stress. 
+            Improving behaviors in these areas can help women and girls maintain a 
+            healthy weight. Video games are a unique medium to boost knowledge and 
+            skills and can lead to behavior change through exploration of cause and
+             effect in a virtual environment.`,
         url: "",
         duration: "3 months",
-        languages: "JavaScript, Unity",
-        status: "Working Progress"
+        languages: "JavaScript and Unity.",
+        status: "Currently under development"
       }
     ],
     nav: {
