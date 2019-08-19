@@ -72,8 +72,6 @@ class Contact extends Component {
           value: "",
           validation: {
             required: false,
-            // minLength: 14,
-            // maxLength: 14,
             isPhoneNumber: true
           },
           classes: "row-md-6 row-sm-12 row-xs-12",
@@ -174,7 +172,6 @@ class Contact extends Component {
     this.setState({
       form: { fields: fieldsCopy, isValid: formIsValid }
     });
-    console.log(this.state.form);
   }
   showLodingIcon = bool => {
     this.setState({
@@ -192,20 +189,17 @@ class Contact extends Component {
       modal: { ...this.state.modal, show: true }
     });
     this.showLodingIcon(true);
-    console.log("sending... ", this.state.form);
     let newObj = {};
     for (let field in this.state.form.fields) {
       if (this.state.form.fields[field].value)
         newObj[field] = this.state.form.fields[field].value;
     }
-    console.log(newObj);
     axios
       .post("https://samsportfolio-749ec.firebaseio.com/contact.json", {
         ...newObj,
         date: new Date().toJSON()
       })
       .then(res => {
-        console.log(res);
         this.showLodingIcon(false);
         this.setState({
           modal: {
@@ -232,7 +226,6 @@ class Contact extends Component {
         }
       })
       .catch(err => {
-        console.log(err);
         this.showLodingIcon(false);
         this.setState({
           modal: {
