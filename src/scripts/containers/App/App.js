@@ -65,6 +65,14 @@ class App extends Component {
         status: "Finished"
       },
       {
+        title: "Giphy Clone",
+        description: "Web App that displays gifs from Giphy servers.",
+        url: "https://rocky-sierra-20177.herokuapp.com/",
+        duration: "1 day",
+        languages: "HTML, CSS, JavaScript and React.",
+        status: "Finished"
+      },
+      {
         title: "AlliesPro Mobile App",
         description:
           "Mobile version of AlliesPro, now more accessible to users.",
