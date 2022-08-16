@@ -1,0 +1,10 @@
+export { default as Meta } from "./Meta";
+export { default as Footer } from "./Footer";
+export { default as Navbar } from "./Navbar";
+export { default as SocialMedia } from "./SocialMedia";
+export { default as Hero } from "./Hero";
+export { default as Section } from "./Section";
+export { default as OwnerName } from "./OwnerName";
+export { default as OwnerProjects } from "./OwnerProjects";
+export { default as OwnerSkills } from "./OwnerSkills";
+export * from "./Layout";
