@@ -10,6 +10,7 @@ interface Props {
   isBottomShadowEnabled?: boolean;
   isTopShadowEnabled?: boolean;
   topNav?: boolean;
+  bgColor?: string;
 }
 
 const Section = ({
@@ -20,17 +21,22 @@ const Section = ({
   isBottomShadowEnabled = false,
   isTopShadowEnabled = false,
   topNav = false,
+  bgColor,
 }: Props) => {
   const topShadow = isTopShadowEnabled ? styles.topShadow : "";
   const bottomShadow = isBottomShadowEnabled ? styles.bottomShadow : "";
   const topPadding = topNav ? styles.topPadding : "";
-
+  const classes = [styles.container, topShadow, bottomShadow].join(" ");
   return (
-    <div
-      className={[styles.container, topShadow, topPadding, bottomShadow].join(
-        " "
+    <div className={classes}>
+      {bgColor && (
+        <div
+          className={styles.backgroundColor}
+          style={{
+            backgroundColor: bgColor,
+          }}
+        />
       )}
-    >
       {bgImage && (
         <div className={styles.backgroundImage}>
           {isOverlay && <div className={styles.overlay} />}
@@ -44,7 +50,9 @@ const Section = ({
           />
         </div>
       )}
-      <div className={styles.componentContainer}>{children}</div>
+      <div className={[styles.componentContainer, topPadding].join(" ")}>
+        {children}
+      </div>
     </div>
   );
 };

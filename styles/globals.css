@@ -2,9 +2,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #eff8e2;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -14,6 +11,33 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.primaryText {
+  font-family: 'Notable', sans-serif;
+  color: #f5eee6;
+  /* text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d, 9px 9px #f07a6a,
+  12px 12px 0 #ee6352; */
+  opacity: 0.6;
+}
+
+.secondaryText {
+  font-family: 'Antonio', sans-serif;
+  color: #f5eee6;
+  letter-spacing: 2px;
+
+}
+
+.subPrimaryText {
+  font-family: 'Antonio', sans-serif;
+  font-size: 0.3em;
+  display: block;
+  letter-spacing: 5px;
+  padding: 10px 0;
+}
+
+.circle {
+  border-radius: 50%;
 }
 
 @media (prefers-color-scheme: dark) {

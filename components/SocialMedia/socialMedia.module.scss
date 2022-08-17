@@ -1,4 +1,8 @@
 .linkList {
   display: flex;
   list-style: none;
+  justify-content: flex-end;
+  li {
+    padding: 0 0.5em;
+  }
 }

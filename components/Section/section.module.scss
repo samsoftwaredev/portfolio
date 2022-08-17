@@ -59,12 +59,8 @@
 }
 
 .componentContainer {
-  position: relative;
-  width: inherit;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .overlay {
@@ -77,4 +73,11 @@
 
 .topPadding {
   padding: 60px;
+}
+
+.backgroundColor {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }

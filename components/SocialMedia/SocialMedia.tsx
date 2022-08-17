@@ -1,23 +1,31 @@
-import { Box, Icon, Link } from "@mui/material";
+import { Box, colors, Icon, Link } from "@mui/material";
 import { GitHub, LinkedIn } from "@mui/icons-material";
 import styles from "./socialMedia.module.scss";
 
 const SocialMedia = () => {
-  const linkedInURL = "https://www.linkedin.com/in/samuel-ruiz-839895142/";
-  const gitHubURL = "https://github.com/samsoftwaredev/";
+  const medias = [
+    {
+      name: "LinkedIn",
+      icon: LinkedIn,
+      url: "https://www.linkedin.com/in/samuel-ruiz-839895142/",
+    },
+    {
+      name: "GitHub",
+      icon: GitHub,
+      url: "https://github.com/samsoftwaredev/",
+    },
+  ];
+
   return (
     <Box component="section">
       <ul className={styles.linkList}>
-        <li>
-          <Link href={linkedInURL}>
-            <Icon component={LinkedIn} fontSize="large" />
-          </Link>
-        </li>
-        <li>
-          <Link href={gitHubURL}>
-            <Icon component={GitHub} fontSize="large" />
-          </Link>
-        </li>
+        {medias.map(({ name, icon, url }) => (
+          <li key={name}>
+            <Link href={url} color={colors.grey[200]}>
+              <Icon component={icon} fontSize="large" />
+            </Link>
+          </li>
+        ))}
       </ul>
     </Box>
   );

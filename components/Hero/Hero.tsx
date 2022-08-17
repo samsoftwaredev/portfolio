@@ -7,16 +7,7 @@ interface Props {
 }
 
 const Hero = ({ children }: Props) => {
-  return (
-    <Box
-    // sx={{
-    //   width: "100%",
-    //   maxWidth: 800
-    // }}
-    >
-      {children}
-    </Box>
-  );
+  return <Box className={styles.container}>{children}</Box>;
 };
 
 export default Hero;

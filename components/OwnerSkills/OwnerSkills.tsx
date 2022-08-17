@@ -1,6 +1,5 @@
-import * as React from "react";
-import { Box, LinearProgress } from "@mui/material";
-
+import { Typography } from "@mui/material";
+import styles from "./ownerSkills.module.scss";
 interface Props {
   skills: {
     name: string;
@@ -10,14 +9,15 @@ interface Props {
 
 const OwnerProjects = ({ skills }: Props) => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      {skills.map(({ name, knowledgeAmount }) => (
-        <Box key={name}>
-          {name}
-          <LinearProgress variant="determinate" value={knowledgeAmount} />
-        </Box>
+    <ul className={styles.list}>
+      {skills.map(({ name }) => (
+        <li key={name}>
+          <Typography variant="h6" className="secondaryText">
+            {name}
+          </Typography>
+        </li>
       ))}
-    </Box>
+    </ul>
   );
 };
 
