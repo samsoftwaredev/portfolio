@@ -1,4 +1,6 @@
 import type { NextPage } from "next";
+import { scroller, Element } from "react-scroll";
+import Image from "next/image";
 import {
   Hero,
   MainLayout,
@@ -19,7 +21,6 @@ import {
 } from "../public/projects";
 import { attack, heaven, maria, mary } from "../public/backgrounds";
 import { ownerPicture } from "../public/owner";
-import Image, { StaticImageData } from "next/image";
 
 const Home: NextPage = () => {
   const owner = {
@@ -162,54 +163,64 @@ const Home: NextPage = () => {
 
   const yearsOfExp = () => new Date().getFullYear() - 2019;
 
+  const scrollToElm = (element: string) => {
+    scroller.scrollTo(element, {
+      duration: 1500,
+      delay: 100,
+      smooth: "easeInOutQuint",
+    });
+  };
+
   return (
     <MainLayout>
       <Section
         bgImage={getRandomImage()}
         imageAlt="A Programmer from heaven"
-        topNav
         isBottomShadowEnabled
         isOverlay
       >
-        <Hero>
-          <Box
-            sx={{
-              display: "flex",
-              flexWrap: "nowrap",
-              alignItems: "flex-end",
-              justifyContent: "space-between",
-            }}
+        <Box
+          sx={{
+            paddingTop: "4em",
+            display: "flex",
+            flexWrap: "nowrap",
+            alignItems: "flex-end",
+            justifyContent: "space-between",
+          }}
+        >
+          {/* <OwnerName firstName={owner.firstName} lastName={owner.lastName} /> */}
+          <Typography
+            maxWidth={700}
+            variant="h1"
+            gutterBottom
+            className="primaryText"
           >
-            {/* <OwnerName firstName={owner.firstName} lastName={owner.lastName} /> */}
-            <Typography
-              maxWidth={700}
-              variant="h1"
-              gutterBottom
-              className="primaryText"
-            >
-              <small className="subPrimaryText">A Very Creative</small>
-              Front-End Developer
-              <small className="subPrimaryText">
-                + {yearsOfExp()} years experience
-              </small>
+            <small className="subPrimaryText">A Very Creative</small>
+            Front-End Developer
+            <small className="subPrimaryText">
+              + {yearsOfExp()} years experience
+            </small>
+          </Typography>
+          <Box maxWidth={300}>
+            <Typography variant="h5" gutterBottom className="secondaryText">
+              I&apos;m a Web Developer. I have worked in multiple startups and I
+              have had the opportunity to build my own startup. I have worked as
+              a front-end developer for a couple of years now and I have seen it
+              all.
             </Typography>
-            <Box maxWidth={300}>
-              <Typography variant="h5" gutterBottom className="secondaryText">
-                I&apos;m a Web Developer. I have worked in multiple startups and
-                I have had the opportunity to build my own startup. I have
-                worked as a front-end developer for a couple of years now and I
-                have seen it all.
-              </Typography>
-              <Button color="secondary" variant="contained">
-                Contact Me
-              </Button>
-            </Box>
+            <Button
+              onClick={() => scrollToElm("contact")}
+              color="secondary"
+              variant="contained"
+            >
+              Contact Me
+            </Button>
           </Box>
-        </Hero>
+        </Box>
       </Section>
 
       <Section topNav isTopShadowEnabled bgColor={colors.pink[900]}>
-        <Hero>
+        <Element name="about">
           <Box
             sx={{
               display: "flex",
@@ -250,23 +261,23 @@ const Home: NextPage = () => {
               <SocialMedia />
             </Typography>
           </Box>
-        </Hero>
+        </Element>
       </Section>
 
       <Section bgColor={colors.pink[900]}>
-        <Hero>
-          <Typography
-            color="white"
-            variant="h3"
-            gutterBottom
-            className="primaryText"
-            px={20}
-          >
-            My Skills
-            <small className="subPrimaryText">
-              This is just an overview, I know a lot more!
-            </small>
-          </Typography>
+        <Typography
+          color="white"
+          variant="h3"
+          gutterBottom
+          className="primaryText"
+          px={20}
+        >
+          My Skills
+          <small className="subPrimaryText">
+            This is just an overview, I know a lot more!
+          </small>
+        </Typography>
+        <Element name="skills">
           <Box
             sx={{
               display: "flex",
@@ -293,7 +304,7 @@ const Home: NextPage = () => {
               <OwnerSkills skills={beLanguages} />
             </Box>
           </Box>
-        </Hero>
+        </Element>
       </Section>
 
       <Section isBottomShadowEnabled bgColor={colors.pink[900]}>
@@ -309,15 +320,11 @@ const Home: NextPage = () => {
             I&apos;m constantly working on these projects
           </small>
         </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <OwnerProjects projects={projects} />
-        </Box>
+        <Element name="projects">
+          <Box px={"15em"}>
+            <OwnerProjects projects={projects} />
+          </Box>
+        </Element>
       </Section>
 
       <Section
@@ -326,18 +333,18 @@ const Home: NextPage = () => {
         isOverlay
         bgColor={colors.grey[900]}
       >
-        <Hero>
-          <Typography
-            color="white"
-            variant="h1"
-            gutterBottom
-            className="primaryText"
-            maxWidth={600}
-            px={20}
-          >
-            <small className="subPrimaryText">Before you go...</small>
-            Let&apos;s Connect
-          </Typography>
+        <Typography
+          color="white"
+          variant="h1"
+          gutterBottom
+          className="primaryText"
+          maxWidth={600}
+          px={20}
+        >
+          <small className="subPrimaryText">Before you go...</small>
+          Let&apos;s Connect
+        </Typography>
+        <Element name="contact">
           <Box
             sx={{
               display: "flex",
@@ -346,13 +353,10 @@ const Home: NextPage = () => {
             }}
           >
             <Box p={2} minWidth={300}>
-              <Typography variant="h5" className="secondaryText" gutterBottom>
-                Front-End Languages
-              </Typography>
               {/* Contact me */}
             </Box>
           </Box>
-        </Hero>
+        </Element>
       </Section>
     </MainLayout>
   );

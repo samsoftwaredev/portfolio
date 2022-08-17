@@ -26,12 +26,12 @@ const OwnerProjects = ({ projects }: Props) => {
   return (
     <Grid
       container
-      spacing={{ xs: 2, md: 3 }}
-      columns={{ xs: 4, sm: 8, md: 12 }}
+      spacing={{ xs: 4, md: 5 }}
+      columns={{ xs: 1, sm: 1, md: 12 }}
     >
       {projects.map((p) => (
         <Grid item xs={2} sm={4} md={4} key={p.title}>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card>
             <Image
               className={styles.image}
               alt={p.imageAlt}
