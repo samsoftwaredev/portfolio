@@ -321,15 +321,7 @@ const Home: NextPage = () => {
           </small>
         </Typography>
         <Element name="projects">
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "stretch",
-              justifyContent: "center",
-            }}
-          >
-            <OwnerProjects projects={projects} />
-          </Box>
+          <OwnerProjects projects={projects} />
         </Element>
       </Section>
 
