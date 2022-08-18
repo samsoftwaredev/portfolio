@@ -19,8 +19,12 @@ and then do:
 ### TODO
 
 - [] Make it mobile friendly
-- [] Finish 'Super Cute Wars'
-- [] Republish AlliesPro
-- [] Add connect fields
+- [] Add Contact form fields
+- [] Decrease size of images
+- [] Finish 'Super Cute Wars' game
+- [] Republish AlliesPro and add it to the list of projects
 - [] Add animations and transitions to the page
 - [] Background images should rotate
+- [] Improve styling of projects
+- [] Add music "Ave Maria"
+- [] make navbar sticky on About section

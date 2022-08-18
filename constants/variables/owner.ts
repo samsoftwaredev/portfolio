@@ -123,7 +123,7 @@ export const PROJECTS = [
   {
     image: portfolio,
     imageAlt: "Website",
-    title: "Portfolio",
+    title: "Samuel's Portfolio",
     description: "Showcase my work",
     websiteURL: "",
     repositoryURL: "https://github.com/samsoftwaredev/portfolio",

@@ -7,4 +7,8 @@ export { default as Section } from "./Section";
 export { default as OwnerName } from "./OwnerName";
 export { default as OwnerProjects } from "./OwnerProjects";
 export { default as OwnerSkills } from "./OwnerSkills";
+export { default as Skills } from "./Skills";
+export { default as About } from "./About";
+export { default as Projects } from "./Projects";
+export { default as Contact } from "./Contact";
 export * from "./Layout";
