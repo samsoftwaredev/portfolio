@@ -15,7 +15,13 @@ const Navbar = () => {
       <ul className={styles.list}>
         {menu.map(({ name, hash }) => (
           <li key={name}>
-            <Link to={hash} smooth={true} offset={-200} duration={500}>
+            <Link
+              to={hash}
+              smooth={true}
+              offset={-200}
+              duration={500}
+              className={styles.clickable}
+            >
               <Typography
                 color="white"
                 variant="h6"

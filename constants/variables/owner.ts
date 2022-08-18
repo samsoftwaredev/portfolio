@@ -7,6 +7,8 @@ export const OWNER = {
   job: "Front-End Developer",
   nickname: "sam",
   picture: ownerPicture,
+  description:
+    "Samuel Ruiz Portfolio. I'm a Web Developer. I have worked in multiple startups and I have had the opportunity to build my own startup. I have worked as a front-end developer for a couple of years now and I have seen it all. Everything from optimization to accessibility, to testing and writing efficient algorithms. I have worked in multiple startups and I have had the opportunity to build my own startup.",
 };
 
 export const SKILL1 = [

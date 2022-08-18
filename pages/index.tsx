@@ -45,7 +45,7 @@ const Home: NextPage = () => {
       >
         <Box
           sx={{
-            paddingTop: "4em",
+            paddingTop: "10em",
             display: "flex",
             flexWrap: "nowrap",
             alignItems: "flex-end",
