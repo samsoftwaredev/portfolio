@@ -24,36 +24,46 @@ interface Props {
 
 const OwnerProjects = ({ projects }: Props) => {
   return (
-    <Grid
-      container
-      spacing={{ xs: 4, md: 5 }}
-      columns={{ xs: 1, sm: 1, md: 12 }}
+    <Box
+      mt={5}
+      sx={{
+        display: "flex",
+        alignItems: "stretch",
+        justifyContent: "center",
+      }}
     >
       {projects.map((p) => (
-        <Grid item xs={2} sm={4} md={4} key={p.title}>
-          <Card>
-            <Image
+        <Card
+          key={p.title}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "space-between",
+            justifyContent: "space-between",
+            alignContent: "space-between",
+          }}
+        >
+          {/* <Image
               className={styles.image}
               alt={p.imageAlt}
               src={p.image}
               quality={100}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {p.title}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {p.description}
-              </Typography>
-            </CardContent>
-            <CardActions>
-              {p.repositoryURL && <Button size="small">Repository</Button>}
-              {p.websiteURL && <Button size="small">View</Button>}
-            </CardActions>
-          </Card>
-        </Grid>
+            /> */}
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {p.title}
+            </Typography>
+            <Typography variant="body2" color="text.secondary" component="div">
+              {p.description}
+            </Typography>
+          </CardContent>
+          <CardActions>
+            {p.repositoryURL && <Button size="small">Repository</Button>}
+            {p.websiteURL && <Button size="small">View</Button>}
+          </CardActions>
+        </Card>
       ))}
-    </Grid>
+    </Box>
   );
 };
 

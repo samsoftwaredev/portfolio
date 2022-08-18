@@ -106,13 +106,13 @@ const Home: NextPage = () => {
   ];
 
   const projects = [
-    {
-      image: alliespro,
-      imageAlt: "Website",
-      title: "AlliesPro",
-      description: "Helping Freelancers get paid on time",
-      repositoryURL: "",
-    },
+    // {
+    //   image: alliespro,
+    //   imageAlt: "Website",
+    //   title: "AlliesPro",
+    //   description: "Helping Freelancers get paid on time",
+    //   repositoryURL: "",
+    // },
     {
       image: giphy,
       imageAlt: "Website",
@@ -185,7 +185,7 @@ const Home: NextPage = () => {
             display: "flex",
             flexWrap: "nowrap",
             alignItems: "flex-end",
-            justifyContent: "space-between",
+            justifyContent: "space-around",
           }}
         >
           {/* <OwnerName firstName={owner.firstName} lastName={owner.lastName} /> */}
@@ -195,7 +195,7 @@ const Home: NextPage = () => {
             gutterBottom
             className="primaryText"
           >
-            <small className="subPrimaryText">A Very Creative</small>
+            <small className="subPrimaryText">A Very Skilled</small>
             Front-End Developer
             <small className="subPrimaryText">
               + {yearsOfExp()} years experience
@@ -317,11 +317,17 @@ const Home: NextPage = () => {
         >
           My Projects
           <small className="subPrimaryText">
-            I&apos;m constantly working on these projects
+            I&apos;m constantly working and improving these projects
           </small>
         </Typography>
         <Element name="projects">
-          <Box px={"15em"}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "stretch",
+              justifyContent: "center",
+            }}
+          >
             <OwnerProjects projects={projects} />
           </Box>
         </Element>
