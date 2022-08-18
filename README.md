@@ -21,10 +21,13 @@ and then do:
 - [] Make it mobile friendly
 - [] Add Contact form fields
 - [] Decrease size of images
-- [] Finish 'Super Cute Wars' game
-- [] Republish AlliesPro and add it to the list of projects
 - [] Add animations and transitions to the page
 - [] Background images should rotate
 - [] Improve styling of projects
-- [] Add music "Ave Maria"
+- [] Add music "Ave Maria" background sound track
 - [] make navbar sticky on About section
+- [] SEO optimization
+- [] Google Analytics
+- [] Add FE/BE blogs pages
+- [] Finish 'Super Cute Wars' game
+- [] Republish AlliesPro and add it to the list of projects

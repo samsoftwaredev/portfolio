@@ -21,10 +21,6 @@ export const SKILL1 = [
     knowledgeAmount: 75,
   },
   {
-    name: "Learning Speed",
-    knowledgeAmount: 85,
-  },
-  {
     name: "Code Optimization Skills",
     knowledgeAmount: 80,
   },
