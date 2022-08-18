@@ -20,10 +20,9 @@ a {
 }
 
 .secondaryText {
-  font-family: 'Antonio', sans-serif;
+  font-family: 'Antonio', sans-serif !important;
   color: #f5eee6;
   letter-spacing: 2px;
-
 }
 
 .subPrimaryText {
