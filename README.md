@@ -19,7 +19,9 @@ and then do:
 ### TODO
 
 - [] Make it mobile friendly
-- [] Add Contact form fields
+- [x] Add Contact form fields
+- [] Change 'any' prop
+- [] send email once the form has been submitted
 - [] add capcha
 - [] Decrease size of images
 - [] Add animations and transitions to the page

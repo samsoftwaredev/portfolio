@@ -5,7 +5,11 @@ import * as Yup from "yup";
 import { css } from "../../utils";
 import { MessageBox } from "./Fields";
 
-const ContactForm = () => {
+interface Props {
+  onSubmitted: Function;
+}
+
+const ContactForm = ({ onSubmitted }: Props) => {
   const initialValues = { fullName: "", email: "", message: "" };
   const validationSchema = Yup.object({
     fullName: Yup.string()
@@ -19,10 +23,8 @@ const ContactForm = () => {
   });
 
   const onSubmit = (values: any, { setSubmitting }: any) => {
-    setTimeout(() => {
-      alert(JSON.stringify(values, null, 2));
-      setSubmitting(false);
-    }, 400);
+    setSubmitting(false);
+    onSubmitted();
   };
 
   return (

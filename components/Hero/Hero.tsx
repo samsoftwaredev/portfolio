@@ -27,6 +27,7 @@ const Hero = () => {
       imageAlt="A programmer from heaven"
       isBottomShadowEnabled
       isOverlay
+      bgColor={colors.grey[900]}
     >
       <Box
         sx={{

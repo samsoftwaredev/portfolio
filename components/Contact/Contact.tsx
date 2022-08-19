@@ -2,8 +2,16 @@ import { Element } from "react-scroll";
 import { Section, ContactForm } from "../../components";
 import { Typography, Box, colors } from "@mui/material";
 import { attack } from "../../public/backgrounds";
+import { useState } from "react";
 
 const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const onSubmitted = () => {
+    setSubmitted(true);
+    // TODO: send email
+  };
+
   return (
     <Section
       isTopShadowEnabled
@@ -32,7 +40,16 @@ const Contact = () => {
           }}
         >
           <Box p={2} minWidth={500}>
-            <ContactForm />
+            {submitted ? (
+              <>
+                <Typography variant="h3" className="secondaryText">
+                  <small className="subPrimaryText">May God Bless You</small>
+                  Thank you! We will be in contact soon.
+                </Typography>
+              </>
+            ) : (
+              <ContactForm onSubmitted={onSubmitted} />
+            )}
           </Box>
         </Box>
       </Element>

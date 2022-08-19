@@ -1,6 +1,7 @@
 import styles from "./section.module.scss";
 import { ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
+import { css } from "../../utils";
 
 interface Props {
   bgImage?: StaticImageData;
@@ -26,9 +27,8 @@ const Section = ({
   const topShadow = isTopShadowEnabled ? styles.topShadow : "";
   const bottomShadow = isBottomShadowEnabled ? styles.bottomShadow : "";
   const topPadding = topNav ? styles.topPadding : "";
-  const classes = [styles.container, topShadow, bottomShadow].join(" ");
   return (
-    <div className={classes}>
+    <div className={css(styles.container, topShadow, bottomShadow)}>
       {bgColor && (
         <div
           className={styles.backgroundColor}
