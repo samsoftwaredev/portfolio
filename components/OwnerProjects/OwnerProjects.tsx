@@ -1,14 +1,13 @@
 import * as React from "react";
 import {
   Box,
-  Grid,
   Card,
   CardActions,
   CardContent,
   Button,
   Typography,
 } from "@mui/material";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import styles from "./ownerProjects.module.scss";
 
 interface Props {
@@ -58,8 +57,10 @@ const OwnerProjects = ({ projects }: Props) => {
             </Typography>
           </CardContent>
           <CardActions>
-            {p.repositoryURL && <Button size="small">Repository</Button>}
-            {p.websiteURL && <Button size="small">View</Button>}
+            {p.repositoryURL && (
+              <Button href={p.repositoryURL}>Repository</Button>
+            )}
+            {p.websiteURL && <Button href={p.websiteURL}>View</Button>}
           </CardActions>
         </Card>
       ))}

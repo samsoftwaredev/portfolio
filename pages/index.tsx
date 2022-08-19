@@ -1,3 +1,4 @@
+import { createTheme, ThemeProvider } from "@mui/material";
 import type { NextPage } from "next";
 import {
   MainLayout,
@@ -8,15 +9,29 @@ import {
   Contact,
 } from "../components";
 
+const theme = createTheme();
+
+theme.typography.h1 = {
+  fontSize: "6rem",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "4rem",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "2.5rem",
+  },
+};
+
 const Home: NextPage = () => {
   return (
-    <MainLayout>
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-    </MainLayout>
+    <ThemeProvider theme={theme}>
+      <MainLayout>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </MainLayout>
+    </ThemeProvider>
   );
 };
 

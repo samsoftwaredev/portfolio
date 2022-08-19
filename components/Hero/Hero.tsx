@@ -3,15 +3,19 @@ import { Section } from "../../components";
 import { Button, Typography, Box, colors } from "@mui/material";
 import { heaven, maria, mary } from "../../public/backgrounds";
 import { OWNER } from "../../constants/variables/owner";
+import styles from "./hero.module.scss";
 
 const Hero = () => {
+  const yearStated = 2019;
+  const currentYear = new Date().getFullYear();
+
   const getRandomImage = () => {
     const bgs = [mary, heaven, maria];
     const count = 1;
     return bgs[count];
   };
 
-  const yearsOfExp = () => new Date().getFullYear() - 2019;
+  const yearsOfExp = () => currentYear - yearStated;
 
   const scrollToElm = (element: string) => {
     scroller.scrollTo(element, {
@@ -29,15 +33,7 @@ const Hero = () => {
       isOverlay
       bgColor={colors.grey[900]}
     >
-      <Box
-        sx={{
-          paddingTop: "10em",
-          display: "flex",
-          flexWrap: "nowrap",
-          alignItems: "flex-end",
-          justifyContent: "space-around",
-        }}
-      >
+      <Box className={styles.container}>
         <Typography
           maxWidth={700}
           variant="h1"
