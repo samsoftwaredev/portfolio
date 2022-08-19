@@ -1,4 +1,4 @@
-# Sam's Portfolio
+# Samuel's Portfolio
 
 This repo contains all of the work I have done.
 
@@ -20,6 +20,7 @@ and then do:
 
 - [] Make it mobile friendly
 - [] Add Contact form fields
+- [] add capcha
 - [] Decrease size of images
 - [] Add animations and transitions to the page
 - [] Background images should rotate
@@ -29,5 +30,5 @@ and then do:
 - [] SEO optimization
 - [] Google Analytics
 - [] Add FE/BE blogs pages
-- [] Finish 'Super Cute Wars' game
+- [] Finish 'Super Cute Wars' game (embedded iframe) for when user is bored or waiting
 - [] Republish AlliesPro and add it to the list of projects

@@ -1,5 +1,5 @@
 import { Element } from "react-scroll";
-import { Section } from "../../components";
+import { Section, ContactForm } from "../../components";
 import { Typography, Box, colors } from "@mui/material";
 import { attack } from "../../public/backgrounds";
 
@@ -31,8 +31,8 @@ const Contact = () => {
             justifyContent: "center",
           }}
         >
-          <Box p={2} minWidth={300}>
-            {/* Contact me */}
+          <Box p={2} minWidth={500}>
+            <ContactForm />
           </Box>
         </Box>
       </Element>
