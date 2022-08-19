@@ -1,6 +1,6 @@
 const MessageBox = ({
   field, // { name, value, onChange, onBlur }
   ...props
-}) => <textarea {...field} {...props} />;
+}: any) => <textarea {...field} {...props} />;
 
 export default MessageBox;

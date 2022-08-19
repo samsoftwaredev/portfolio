@@ -18,7 +18,7 @@ const ContactForm = () => {
     email: Yup.string().email("Invalid email address").required("Required"),
   });
 
-  const onSubmit = (values, { setSubmitting }) => {
+  const onSubmit = (values: any, { setSubmitting }: any) => {
     setTimeout(() => {
       alert(JSON.stringify(values, null, 2));
       setSubmitting(false);
