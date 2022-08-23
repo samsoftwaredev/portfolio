@@ -7,6 +7,7 @@ import { OWNER } from "@/constants/variables/owner";
 import styles from "./hero.module.scss";
 import { StaticImageData } from "next/image";
 import { Email } from "@mui/icons-material";
+import { css } from "@/utils";
 
 const Hero = () => {
   const currentYear = new Date().getFullYear();
@@ -51,7 +52,7 @@ const Hero = () => {
           maxWidth={700}
           variant="h1"
           gutterBottom
-          className="primaryText"
+          className={css("primaryText", styles.title)}
         >
           <small className="subPrimaryText">A Very Skilled</small>
           {OWNER.job}
@@ -59,8 +60,12 @@ const Hero = () => {
             + {yearsOfExp()} years experience
           </small>
         </Typography>
-        <Box className={styles.biography}>
-          <Typography variant="h5" gutterBottom className="secondaryText">
+        <Box className={styles.biographyContainer}>
+          <Typography
+            variant="h5"
+            gutterBottom
+            className={css("secondaryText", styles.biography)}
+          >
             I&apos;m a Web Developer. I have worked in multiple startups and I
             have had the opportunity to build my own startup. I have worked as a
             front-end developer for a couple of years now and I have seen it

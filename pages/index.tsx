@@ -11,16 +11,6 @@ import {
 
 const theme = createTheme();
 
-theme.typography.h1 = {
-  fontSize: "6rem",
-  [theme.breakpoints.down("md")]: {
-    fontSize: "4rem",
-  },
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "2.5rem",
-  },
-};
-
 const Home: NextPage = () => {
   return (
     <ThemeProvider theme={theme}>

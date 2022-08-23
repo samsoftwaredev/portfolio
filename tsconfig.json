@@ -28,6 +28,8 @@
       "@/constants": ["constants/index"],
       "@/public/*": ["public/*"],
       "@/public": ["public/index"],
+      "@/utils/*": ["utils/*"],
+      "@/utils": ["utils/index"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
