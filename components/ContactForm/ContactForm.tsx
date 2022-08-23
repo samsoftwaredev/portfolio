@@ -1,9 +1,17 @@
 import { Button } from "@mui/material";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import {
+  Formik,
+  Form,
+  Field,
+  ErrorMessage,
+  FormikValues,
+  FormikHelpers,
+} from "formik";
 import styles from "./contact.module.scss";
 import * as Yup from "yup";
 import { css } from "../../utils";
 import { MessageBox } from "./Fields";
+import { Send } from "@mui/icons-material";
 
 interface Props {
   onSubmitted: Function;
@@ -22,8 +30,8 @@ const ContactForm = ({ onSubmitted }: Props) => {
     email: Yup.string().email("Invalid email address").required("Required"),
   });
 
-  const onSubmit = (values: any, { setSubmitting }: any) => {
-    setSubmitting(false);
+  const onSubmit = (values: FormikValues, formikHelpers: FormikValues) => {
+    formikHelpers.setSubmitting(false);
     onSubmitted();
   };
 
@@ -99,6 +107,7 @@ const ContactForm = ({ onSubmitted }: Props) => {
               color={"secondary"}
               type="submit"
               disabled={isSubmitting}
+              startIcon={<Send />}
             >
               Submit
             </Button>

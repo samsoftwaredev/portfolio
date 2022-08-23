@@ -20,7 +20,7 @@ and then do:
 
 - [] Make it mobile friendly
 - [x] Add Contact form fields
-- [] Change 'any' prop
+- [x] Change 'any' prop
 - [] send email once the form has been submitted
 - [] add capcha
 - [] Decrease size of images

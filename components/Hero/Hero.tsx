@@ -1,21 +1,24 @@
+import { useEffect, useState } from "react";
 import { scroller } from "react-scroll";
 import { Section } from "../../components";
 import { Button, Typography, Box, colors } from "@mui/material";
 import { heaven, maria, mary } from "../../public/backgrounds";
 import { OWNER } from "../../constants/variables/owner";
 import styles from "./hero.module.scss";
+import { StaticImageData } from "next/image";
+import { Email } from "@mui/icons-material";
 
 const Hero = () => {
-  const yearStated = 2019;
   const currentYear = new Date().getFullYear();
+  const bgs = [heaven, mary, maria];
+  const startIndex = 0;
+  const [bgImage, setBgImage]: [StaticImageData, Function] = useState(
+    bgs[startIndex]
+  );
 
-  const getRandomImage = () => {
-    const bgs = [mary, heaven, maria];
-    const count = 1;
-    return bgs[count];
-  };
+  const getRandomImage = (count = 0): StaticImageData => bgs[count];
 
-  const yearsOfExp = () => currentYear - yearStated;
+  const yearsOfExp = () => currentYear - OWNER.careerStartedYear;
 
   const scrollToElm = (element: string) => {
     scroller.scrollTo(element, {
@@ -25,9 +28,19 @@ const Hero = () => {
     });
   };
 
+  useEffect(() => {
+    let count = startIndex;
+    const interval = setInterval(() => {
+      setBgImage(getRandomImage(count));
+      count += 1;
+      count = count % bgs.length;
+    }, 15000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Section
-      bgImage={getRandomImage()}
+      bgImage={bgImage}
       imageAlt="A programmer from heaven"
       isBottomShadowEnabled
       isOverlay
@@ -57,6 +70,7 @@ const Hero = () => {
             onClick={() => scrollToElm("contact")}
             color="secondary"
             variant="contained"
+            startIcon={<Email />}
           >
             Contact Me
           </Button>
