@@ -1,8 +1,8 @@
 import { Element } from "react-scroll";
 import Image from "next/image";
-import { SocialMedia, Section } from "../../components";
+import { SocialMedia, Section } from "@/components";
 import { Typography, Box, colors } from "@mui/material";
-import { OWNER } from "../../constants/variables/owner";
+import { OWNER } from "@/constants/variables/owner";
 
 const About = () => {
   return (

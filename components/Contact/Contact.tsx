@@ -1,7 +1,7 @@
 import { Element } from "react-scroll";
-import { Section, ContactForm } from "../../components";
+import { Section, ContactForm } from "@/components";
 import { Typography, Box, colors } from "@mui/material";
-import { attack } from "../../public/backgrounds";
+import { attack } from "@/public/backgrounds";
 import { useState } from "react";
 
 const Contact = () => {

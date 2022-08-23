@@ -21,8 +21,8 @@ and then do:
 - [] Make it mobile friendly
 - [x] Add Contact form fields
 - [x] Change 'any' prop
-- [] send email once the form has been submitted
-- [] add capcha
+- [] send email once the form has been submitted (Sendgrid)
+- [] add capcha before submitting form
 - [] Decrease size of images
 - [] Add animations and transitions to the page
 - [] Background images should rotate

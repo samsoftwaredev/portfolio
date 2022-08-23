@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Meta, Footer, Navbar } from "../../../components";
+import { Meta, Footer, Navbar } from "@/components";
 import styles from "./mainLayout.module.scss";
 
 interface Props {

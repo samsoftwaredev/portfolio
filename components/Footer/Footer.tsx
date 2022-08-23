@@ -1,6 +1,5 @@
 import { Typography } from "@mui/material";
-import Image from "next/image";
-import SocialMedia from "../SocialMedia";
+import { SocialMedia } from "@/components";
 import styles from "./footer.module.scss";
 
 const Footer = () => {

@@ -7,7 +7,7 @@ import {
   Projects,
   About,
   Contact,
-} from "../components";
+} from "@/components";
 
 const theme = createTheme();
 

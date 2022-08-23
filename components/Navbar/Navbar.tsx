@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import styles from "./navbar.module.scss";
 import { Link } from "react-scroll";
+import Logo from "../Logo";
 
 const Navbar = () => {
   const menu = [
@@ -13,6 +14,9 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <ul className={styles.list}>
+        {/* <li>
+          <Logo />
+        </li> */}
         {menu.map(({ name, hash }) => (
           <li key={name}>
             <Link

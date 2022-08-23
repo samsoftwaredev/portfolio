@@ -1,7 +1,7 @@
 import { Element } from "react-scroll";
-import { Section, OwnerSkills } from "../../components";
+import { Section, OwnerSkills } from "@/components";
 import { Typography, Box, colors } from "@mui/material";
-import { SKILL1, SKILL2, SKILL3 } from "../../constants/variables/owner";
+import { SKILL1, SKILL2, SKILL3 } from "@/constants/variables/owner";
 
 const Skills = () => {
   return (

@@ -1,7 +1,7 @@
 import { Element } from "react-scroll";
-import { Section, OwnerProjects } from "../../components";
+import { Section, OwnerProjects } from "@/components";
 import { Typography, colors } from "@mui/material";
-import { PROJECTS } from "../../constants/variables/owner";
+import { PROJECTS } from "@/constants/variables/owner";
 
 const Projects = () => {
   return (

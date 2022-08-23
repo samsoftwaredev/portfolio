@@ -1,12 +1,12 @@
 import Head from "next/head";
-import { OWNER } from "../../constants/variables/owner";
+import { OWNER } from "@/constants/variables/owner";
 
 const Meta = () => {
   const pageTitle = `${OWNER.firstName} ${OWNER.lastName} Portfolio`;
   return (
     <Head>
       <meta name="viewport" content="initial-scale=1, width=device-width" />
-      <title>{OWNER.firstName}&apos;s portfolio</title>
+      <title>{pageTitle}</title>
       <link rel="icon" href="/favicon.ico" />
       <meta name="description" content={OWNER.description} />
       <meta
