@@ -14,7 +14,7 @@ const Projects = () => {
         gutterBottom
         className={css("primaryText", styles.title)}
       >
-        <small className="subPrimaryText">
+        <small className={css(styles.subTitle, "subPrimaryText")}>
           I&apos;m constantly improving...
         </small>
         My Projects

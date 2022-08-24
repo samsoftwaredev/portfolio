@@ -1,6 +1,6 @@
 .title {
   padding: 20px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: left;
   @media (min-width: $sm) {
     font-size: 3rem;
@@ -14,5 +14,12 @@
   @media (min-width: $md) {
     justify-content: center;
     flex-direction: row;
+  }
+}
+
+.subTitle {
+  display: none;
+  @media (min-width: $md) {
+    display: block;
   }
 }

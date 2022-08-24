@@ -14,11 +14,13 @@ const Skills = () => {
         gutterBottom
         className={css("primaryText", styles.title)}
       >
-        <small className="subPrimaryText">
+        <small className={css(styles.subTitle, "subPrimaryText")}>
           This is just an overview of my...
         </small>
         My Skills
-        <small className="subPrimaryText">I know a lot more!</small>
+        <small className={css(styles.subTitle, "subPrimaryText")}>
+          I know a lot more!
+        </small>
       </Typography>
       <Element name="skills">
         <Box className={styles.skillsList}>
