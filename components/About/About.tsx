@@ -13,6 +13,7 @@ const About = () => {
         <Box className={styles.container}>
           <Typography
             variant="h3"
+            component="h1"
             gutterBottom
             className={css(styles.title, "primaryText")}
           >

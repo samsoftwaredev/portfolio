@@ -19,15 +19,16 @@ and then do:
 ### TODO
 
 - [x] Make it mobile friendly
-- [] bug design on mobile screen (the site h1 are not looking good)
+- [x] Bug design on mobile screen (the site h1 are not looking good)
 - [x] Add Contact form fields
 - [x] Change 'any' prop
+- [] Add a timeline of your work experience
+- [] Improve styling for Projects section
 - [] send email once the form has been submitted (Sendgrid)
-- [] add capcha before submitting form
-- [] Decrease size of images
+- [] Add captcha before submitting form
+- [] Optimize background images
 - [] Add animations and transitions to the page
 - [] Background images should rotate
-- [] Improve styling of projects
 - [] Add music "Ave Maria" background sound track
 - [] make navbar sticky on About section
 - [] SEO optimization
