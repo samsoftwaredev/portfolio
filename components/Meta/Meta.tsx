@@ -5,10 +5,10 @@ const Meta = () => {
   const pageTitle = `${OWNER.firstName} ${OWNER.lastName} Portfolio`;
   return (
     <Head>
-      <meta name="viewport" content="initial-scale=1, width=device-width" />
       <title>{pageTitle}</title>
       <link rel="icon" href="/favicon.ico" />
       <meta name="description" content={OWNER.description} />
+      <meta name="viewport" content="initial-scale=1, width=device-width" />
       <meta
         name="keywords"
         content={`${pageTitle}, Portfolio, Skills, Projects, Biography, About `}

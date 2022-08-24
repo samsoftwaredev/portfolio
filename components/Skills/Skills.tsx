@@ -2,6 +2,8 @@ import { Element } from "react-scroll";
 import { Section, OwnerSkills } from "@/components";
 import { Typography, Box, colors } from "@mui/material";
 import { SKILL1, SKILL2, SKILL3 } from "@/constants/variables/owner";
+import { css } from "@/utils";
+import styles from "./skills.module.scss";
 
 const Skills = () => {
   return (
@@ -10,22 +12,16 @@ const Skills = () => {
         color="white"
         variant="h3"
         gutterBottom
-        className="primaryText"
-        px={20}
+        className={css("primaryText", styles.title)}
       >
-        My Skills
         <small className="subPrimaryText">
-          This is just an overview, I know a lot more!
+          This is just an overview of my...
         </small>
+        My Skills
+        <small className="subPrimaryText">I know a lot more!</small>
       </Typography>
       <Element name="skills">
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "flex-start",
-            justifyContent: "center",
-          }}
-        >
+        <Box className={styles.skillsList}>
           <Box p={2} minWidth={300}>
             <Typography variant="h5" gutterBottom className="secondaryText">
               Overall

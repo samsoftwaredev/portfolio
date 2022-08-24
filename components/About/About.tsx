@@ -3,44 +3,36 @@ import Image from "next/image";
 import { SocialMedia, Section } from "@/components";
 import { Typography, Box, colors } from "@mui/material";
 import { OWNER } from "@/constants/variables/owner";
+import styles from "./about.module.scss";
+import { css } from "@/utils";
 
 const About = () => {
   return (
     <Section topNav isTopShadowEnabled bgColor={colors.pink[900]}>
       <Element name="about">
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Typography variant="h1" gutterBottom className="primaryText">
+        <Box className={styles.container}>
+          <Typography
+            variant="h1"
+            gutterBottom
+            className={css(styles.title, "primaryText")}
+          >
             <small className="subPrimaryText">Hello there! I&apos;m</small>
             {OWNER.firstName} {OWNER.lastName}
           </Typography>
-          <Box px={5}>
+          <Box px={5} className={styles.imageContainer}>
             <Image
-              className="circle"
+              className={css(styles.profileImage, "circle")}
               alt={`${OWNER.firstName} ${OWNER.lastName}`}
               src={OWNER.picture}
               quality={100}
             />
           </Box>
         </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexWrap: "nowrap",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
+        <Box className={styles.bodyContainer}>
           <Typography
-            maxWidth={800}
             variant="h5"
             gutterBottom
-            className="secondaryText"
+            className={css(styles.body, "secondaryText")}
           >
             With years of strong academic performance and hands-on programming
             experience, my purpose is to make an impact by improving

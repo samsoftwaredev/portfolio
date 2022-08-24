@@ -2,6 +2,8 @@ import { Element } from "react-scroll";
 import { Section, OwnerProjects } from "@/components";
 import { Typography, colors } from "@mui/material";
 import { PROJECTS } from "@/constants/variables/owner";
+import { css } from "@/utils";
+import styles from "./projects.module.scss";
 
 const Projects = () => {
   return (
@@ -10,13 +12,12 @@ const Projects = () => {
         color="white"
         variant="h3"
         gutterBottom
-        className="primaryText"
-        px={20}
+        className={css("primaryText", styles.title)}
       >
-        My Projects
         <small className="subPrimaryText">
-          I&apos;m constantly working and improving these projects
+          I&apos;m constantly improving...
         </small>
+        My Projects
       </Typography>
       <Element name="projects">
         <OwnerProjects projects={PROJECTS} />

@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media (min-width: $sm) {
+    flex-direction: row;
+    font-size: 3rem;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  @media (min-width: $sm) {
+    text-align: left;
+    font-size: 3rem;
+  }
+  @media (min-width: $md) {
+    font-size: 4rem;
+  }
+}
+
+// .imageContainer {
+// }
+
+// .profileImage {
+// }
+
+.bodyContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  @media (min-width: $sm) {
+    margin-top: 20px;
+  }
+}
+
+.body {
+  max-width: 1200px;
+}

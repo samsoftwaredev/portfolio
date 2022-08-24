@@ -71,14 +71,16 @@ const Hero = () => {
             front-end developer for a couple of years now and I have seen it
             all.
           </Typography>
-          <Button
-            onClick={() => scrollToElm("contact")}
-            color="secondary"
-            variant="contained"
-            startIcon={<Email />}
-          >
-            Contact Me
-          </Button>
+          <Box className={styles.cta}>
+            <Button
+              onClick={() => scrollToElm("contact")}
+              color="secondary"
+              variant="contained"
+              startIcon={<Email />}
+            >
+              Contact Me
+            </Button>
+          </Box>
         </Box>
       </Box>
     </Section>
