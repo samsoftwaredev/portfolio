@@ -32,25 +32,15 @@ const Contact = () => {
           <small className="subPrimaryText">Before you go...</small>
           Let&apos;s Connect
         </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "flex-start",
-            justifyContent: "center",
-          }}
-        >
-          <Box p={2} minWidth={500}>
-            {submitted ? (
-              <>
-                <Typography variant="h3" className="secondaryText">
-                  <small className="subPrimaryText">May God Bless You</small>
-                  Thank you! We will be in contact soon.
-                </Typography>
-              </>
-            ) : (
-              <ContactForm onSubmitted={onSubmitted} />
-            )}
-          </Box>
+        <Box className={styles.formContainer}>
+          {submitted ? (
+            <Typography variant="h3" className="secondaryText">
+              <small className="subPrimaryText">May God Bless You</small>
+              Thank you! We will be in contact soon.
+            </Typography>
+          ) : (
+            <ContactForm onSubmitted={onSubmitted} />
+          )}
         </Box>
       </Element>
     </Section>

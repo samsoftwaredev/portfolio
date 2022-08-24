@@ -42,7 +42,7 @@ const ContactForm = ({ onSubmitted }: Props) => {
       onSubmit={onSubmit}
     >
       {({ isSubmitting }) => (
-        <Form>
+        <Form className={styles.form}>
           <div className={styles.fieldContainer}>
             <label
               className={css(styles.fieldLabel, "secondaryText")}
