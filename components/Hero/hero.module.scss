@@ -1,10 +1,10 @@
 .container {
-  margin: 60px;
   height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
+  margin: 60px 10px;
   @media (min-width: $mobile) {
     justify-content: flex-end;
   }
@@ -12,6 +12,7 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    margin: 60px;
   }
 }
 
