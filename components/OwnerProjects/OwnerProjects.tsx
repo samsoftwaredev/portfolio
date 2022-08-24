@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import { StaticImageData } from "next/image";
 import styles from "./ownerProjects.module.scss";
+import { GitHub, RemoveRedEye } from "@mui/icons-material";
 
 interface Props {
   projects: {
@@ -23,25 +24,9 @@ interface Props {
 
 const OwnerProjects = ({ projects }: Props) => {
   return (
-    <Box
-      mt={5}
-      sx={{
-        display: "flex",
-        alignItems: "stretch",
-        justifyContent: "center",
-      }}
-    >
+    <Box className={styles.container}>
       {projects.map((p) => (
-        <Card
-          key={p.title}
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "space-between",
-            justifyContent: "space-between",
-            alignContent: "space-between",
-          }}
-        >
+        <Card key={p.title} className={styles.item}>
           {/* <Image
               className={styles.image}
               alt={p.imageAlt}
@@ -58,9 +43,15 @@ const OwnerProjects = ({ projects }: Props) => {
           </CardContent>
           <CardActions>
             {p.repositoryURL && (
-              <Button href={p.repositoryURL}>Repository</Button>
+              <Button startIcon={<GitHub />} href={p.repositoryURL}>
+                Repository
+              </Button>
             )}
-            {p.websiteURL && <Button href={p.websiteURL}>View</Button>}
+            {p.websiteURL && (
+              <Button startIcon={<RemoveRedEye />} href={p.websiteURL}>
+                View
+              </Button>
+            )}
           </CardActions>
         </Card>
       ))}

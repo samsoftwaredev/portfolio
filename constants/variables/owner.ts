@@ -96,7 +96,8 @@ export const PROJECTS = [
     image: giphy,
     imageAlt: "Website",
     title: "Giphy Clone",
-    description: "Giphy Clone that displays gifs",
+    description:
+      "GIPHY, is a search engine that allows users to search for and share animated GIF files.",
     websiteURL: "https://rocky-sierra-20177.herokuapp.com/",
     repositoryURL: "https://github.com/samsoftwaredev/giphy-clone",
   },
@@ -104,7 +105,8 @@ export const PROJECTS = [
     image: garden,
     imageAlt: "Website",
     title: "Luisa's Garden",
-    description: "I love planting orchids. Here's one of my passions.",
+    description:
+      "This website will tell you all you need to know about orchids.",
     websiteURL: "",
     repositoryURL: "https://github.com/samsoftwaredev/luisa-garden",
   },
@@ -112,7 +114,8 @@ export const PROJECTS = [
     image: finmily,
     imageAlt: "Website",
     title: "Finmily",
-    description: "Webapp to help freelancers get paid on time.",
+    description:
+      "Webapp to help track expenses. Users are able to share their financial information with their family members as well as send money.",
     websiteURL: "https://finmily.herokuapp.com/",
     repositoryURL: "https://github.com/samsoftwaredev/finmily",
   },
@@ -120,8 +123,9 @@ export const PROJECTS = [
     image: portfolio,
     imageAlt: "Website",
     title: "Samuel's Portfolio",
-    description: "Portfolio website to showcase my work",
-    websiteURL: "",
+    description:
+      "Website to showcase my work. You can clone the repo and built your own website portfolio.",
+    websiteURL: "https://samuelruizportfolio.herokuapp.com/",
     repositoryURL: "https://github.com/samsoftwaredev/portfolio",
   },
   {

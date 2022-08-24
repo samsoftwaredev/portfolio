@@ -1,3 +1,21 @@
-.image {
-  max-height: 100px;
+.container {
+  padding: 1em;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  @media (min-width: $md) {
+    flex-direction: row;
+  }
+}
+
+.item {
+  display: flex;
+  flex: 1;
+  flex-basis: 25%;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+  align-content: space-between;
 }

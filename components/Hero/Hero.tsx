@@ -50,7 +50,8 @@ const Hero = () => {
       <Box className={styles.container}>
         <Typography
           maxWidth={700}
-          variant="h3"
+          variant="h1"
+          component="h3"
           gutterBottom
           className={css("primaryText", styles.title)}
         >
