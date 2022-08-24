@@ -12,7 +12,7 @@ const About = () => {
       <Element name="about">
         <Box className={styles.container}>
           <Typography
-            variant="h1"
+            variant="h3"
             gutterBottom
             className={css(styles.title, "primaryText")}
           >

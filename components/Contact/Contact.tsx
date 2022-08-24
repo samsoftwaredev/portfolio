@@ -24,8 +24,7 @@ const Contact = () => {
     >
       <Element name="contact">
         <Typography
-          color="white"
-          variant="h1"
+          variant="h3"
           gutterBottom
           className={css(styles.title, "primaryText")}
         >

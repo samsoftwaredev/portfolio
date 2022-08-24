@@ -18,7 +18,8 @@ and then do:
 
 ### TODO
 
-- [] Make it mobile friendly
+- [x] Make it mobile friendly
+- [] bug design on mobile screen (the site h1 are not looking good)
 - [x] Add Contact form fields
 - [x] Change 'any' prop
 - [] send email once the form has been submitted (Sendgrid)
