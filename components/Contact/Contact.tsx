@@ -20,7 +20,6 @@ const Contact = () => {
     >
       <Element name="contact">
         <Typography
-          variant="h1"
           component="h3"
           gutterBottom
           className={css(styles.title, "primaryText")}
