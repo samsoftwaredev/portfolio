@@ -23,8 +23,8 @@ const Hero = () => {
 
   const scrollToElm = (element: string) => {
     scroller.scrollTo(element, {
-      duration: 1500,
-      delay: 100,
+      duration: 1000,
+      delay: 50,
       smooth: "easeInOutQuint",
     });
   };
@@ -48,12 +48,7 @@ const Hero = () => {
       bgColor={colors.grey[900]}
     >
       <Box className={styles.container}>
-        <Typography
-          maxWidth={700}
-          component="h3"
-          gutterBottom
-          className={css("primaryText", styles.title)}
-        >
+        <Typography component="h3" className={css("primaryText", styles.title)}>
           <small className="subPrimaryText">A Very Skilled</small>
           {OWNER.job}
           <small className="subPrimaryText">
@@ -83,6 +78,7 @@ const Hero = () => {
           </Box>
         </Box>
       </Box>
+      <div onClick={() => scrollToElm("about")} className={styles.scrollDown} />
     </Section>
   );
 };

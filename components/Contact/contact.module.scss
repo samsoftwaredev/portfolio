@@ -7,14 +7,12 @@
   font-size: 2.5rem;
   text-align: center;
   padding-left: 20px;
-  max-width: 600px;
   @media (min-width: $sm) {
     font-size: 3rem;
   }
   @media (min-width: $md) {
     padding-left: 60px;
     font-size: 6rem;
-    text-align: left;
   }
 }
 

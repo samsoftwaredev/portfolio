@@ -27,7 +27,7 @@ and then do:
 - [x] Add captcha before submitting form (used google forms)
 - [] Optimize background images
 - [] Add animations and transitions to the page
-- [] Background images should rotate
+- [x] Background images should rotate
 - [] Add music "Ave Maria" background sound track
 - [] make navbar sticky on About section
 - [] SEO optimization
