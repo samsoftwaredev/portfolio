@@ -48,7 +48,11 @@ const Hero = () => {
       bgColor={colors.grey[900]}
     >
       <Box className={styles.container}>
-        <Typography className={css("primaryText", styles.title)}>
+        <Typography
+          variant="h1"
+          component="h2"
+          className={css("primaryText", styles.title)}
+        >
           <small className="subPrimaryText">A Very Skilled</small>
           {OWNER.job}
           <small className="subPrimaryText">
