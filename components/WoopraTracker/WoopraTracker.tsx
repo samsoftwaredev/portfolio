@@ -1,9 +1,8 @@
 // @ts-nocheck
-// source https://github.com/animalresearch/woopra-react/blob/master/index.jsx
-import { Component } from "react";
+import { useEffect } from "react";
 
-export default class WoopraTracker extends Component {
-  componentDidMount() {
+const WoopraTracker = ({ config }: any) => {
+  useEffect(() => {
     (function () {
       var t,
         i,
@@ -23,8 +22,8 @@ export default class WoopraTracker extends Component {
           "trackClick",
         ],
         c = function () {
-          var t,
-            i = this;
+          let t;
+          let i = this;
           // eslint-disable-next-line no-sequences
           for (i._e = [], t = 0; r.length > t; t++)
             (function (t) {
@@ -50,12 +49,12 @@ export default class WoopraTracker extends Component {
 
     const woopra = window.woopra;
 
-    woopra.config(this.props.config);
+    woopra.config(config);
 
     woopra.track();
-  }
+  }, []);
 
-  render() {
-    return [];
-  }
-}
+  return null;
+};
+
+export default WoopraTracker;

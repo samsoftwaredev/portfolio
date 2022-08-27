@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "local": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "logs": "heroku logs -t"
   },
   "dependencies": {
     "@animalresearch/woopra-react": "^1.0.0",
