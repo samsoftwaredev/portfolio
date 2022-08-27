@@ -50,7 +50,7 @@ const Hero = () => {
       <Box className={styles.container}>
         <Typography
           variant="h1"
-          component="h2"
+          component="h6"
           className={css("primaryText", styles.title)}
         >
           <small className="subPrimaryText">A Very Skilled</small>
