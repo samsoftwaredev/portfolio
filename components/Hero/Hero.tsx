@@ -49,7 +49,7 @@ const Hero = () => {
     >
       <Box className={styles.container}>
         <Typography
-          variant="h1"
+          variant="h3"
           component="h6"
           className={css("primaryText", styles.title)}
         >
