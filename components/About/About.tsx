@@ -11,14 +11,10 @@ const About = () => {
     <Section topNav isTopShadowEnabled bgColor={colors.pink[900]}>
       <Element name="about">
         <Box className={styles.container}>
-          <Typography
-            component="h3"
-            gutterBottom
-            className={css(styles.title, "primaryText")}
-          >
+          <h3 className={css(styles.title, "primaryText")}>
             <small className="subPrimaryText">Hello there! I&apos;m</small>
             {OWNER.firstName} {OWNER.lastName}
-          </Typography>
+          </h3>
           <Box px={5} className={styles.imageContainer}>
             <Image
               className={css(styles.profileImage, "circle")}

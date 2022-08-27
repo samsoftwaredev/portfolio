@@ -19,14 +19,10 @@ const Contact = () => {
       bgColor={colors.grey[900]}
     >
       <Element name="contact">
-        <Typography
-          component="h3"
-          gutterBottom
-          className={css(styles.title, "primaryText")}
-        >
+        <h2 className={css(styles.title, "primaryText")}>
           <small className="subPrimaryText">Before you go...</small>
           Let&apos;s Connect
-        </Typography>
+        </h2>
 
         <Box className={styles.formContainer}>
           <iframe
