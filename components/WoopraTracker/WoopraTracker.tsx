@@ -1,7 +1,9 @@
-import { useEffect } from "react";
+// @ts-nocheck
+// source https://github.com/animalresearch/woopra-react/blob/master/index.jsx
+import { Component } from "react";
 
-const WoopraTracker = ({ config }: any) => {
-  useEffect(() => {
+export default class WoopraTracker extends Component {
+  componentDidMount() {
     (function () {
       var t,
         i,
@@ -48,12 +50,12 @@ const WoopraTracker = ({ config }: any) => {
 
     const woopra = window.woopra;
 
-    woopra.config(config);
+    woopra.config(this.props.config);
 
     woopra.track();
-  }, []);
+  }
 
-  return null;
-};
-
-export default WoopraTracker;
+  render() {
+    return [];
+  }
+}

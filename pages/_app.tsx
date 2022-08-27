@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { WoopraTracker } from "@/components";
+import { WoopraTracker } from "../components";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
