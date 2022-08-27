@@ -100,24 +100,6 @@ export const PROJECTS = [
   //   repositoryURL: "",
   // },
   {
-    image: giphy,
-    imageAlt: "Website",
-    title: "Giphy Clone",
-    description:
-      "GIPHY is a search engine that allows users to search for and share animated GIF files.",
-    websiteURL: "https://rocky-sierra-20177.herokuapp.com/",
-    repositoryURL: "https://github.com/samsoftwaredev/giphy-clone",
-  },
-  {
-    image: garden,
-    imageAlt: "Website",
-    title: "Luisa's Garden",
-    description:
-      "Luisa's Garden is a website that teaches orchid enthusiasts how to grow, reproduce and maintain orchids.",
-    websiteURL: "",
-    repositoryURL: "https://github.com/samsoftwaredev/luisa-garden",
-  },
-  {
     image: finmily,
     imageAlt: "Website",
     title: "Finmily",
@@ -136,6 +118,15 @@ export const PROJECTS = [
     repositoryURL: "https://github.com/samsoftwaredev/portfolio",
   },
   {
+    image: garden,
+    imageAlt: "Website",
+    title: "Luisa's Garden",
+    description:
+      "Luisa's Garden is a website that teaches orchid enthusiasts how to grow, reproduce and maintain orchids.",
+    websiteURL: "",
+    repositoryURL: "https://github.com/samsoftwaredev/luisa-garden",
+  },
+  {
     image: game,
     imageAlt: "Game Website",
     title: "The Wild Warriors",
@@ -143,5 +134,14 @@ export const PROJECTS = [
       'The Wild Warriors is a comic book. I decided to make a game with it characters similar to "Rock paper scissors."',
     websiteURL: "https://super-cute-wars.herokuapp.com/",
     repositoryURL: "https://github.com/samsoftwaredev/super-cute-wars",
+  },
+  {
+    image: giphy,
+    imageAlt: "Website",
+    title: "Giphy Clone",
+    description:
+      "GIPHY is a search engine that allows users to search for and share animated GIF files.",
+    websiteURL: "https://rocky-sierra-20177.herokuapp.com/",
+    repositoryURL: "https://github.com/samsoftwaredev/giphy-clone",
   },
 ];
