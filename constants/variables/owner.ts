@@ -87,9 +87,16 @@ export const SKILL3 = [
 export const PROJECTS = [
   // {
   //   image: alliespro,
-  //   imageAlt: "Website",
+  //   imageAlt: "Website Home Page",
   //   title: "AlliesPro",
   //   description: "Helping Freelancers get paid on time",
+  //   repositoryURL: "",
+  // },
+  // {
+  //   image: rosaryApp,
+  //   imageAlt: "Rosary App",
+  //   title: "Rosary Webapp",
+  //   description: "User are able to pray the rosary",
   //   repositoryURL: "",
   // },
   {
@@ -97,7 +104,7 @@ export const PROJECTS = [
     imageAlt: "Website",
     title: "Giphy Clone",
     description:
-      "GIPHY, is a search engine that allows users to search for and share animated GIF files.",
+      "GIPHY is a search engine that allows users to search for and share animated GIF files.",
     websiteURL: "https://rocky-sierra-20177.herokuapp.com/",
     repositoryURL: "https://github.com/samsoftwaredev/giphy-clone",
   },
@@ -106,7 +113,7 @@ export const PROJECTS = [
     imageAlt: "Website",
     title: "Luisa's Garden",
     description:
-      "This website will tell you all you need to know about orchids.",
+      "Luisa's Garden is a website that teaches orchid enthusiasts how to grow, reproduce and maintain orchids.",
     websiteURL: "",
     repositoryURL: "https://github.com/samsoftwaredev/luisa-garden",
   },
@@ -115,7 +122,7 @@ export const PROJECTS = [
     imageAlt: "Website",
     title: "Finmily",
     description:
-      "Webapp to help track expenses. Users are able to share their financial information with their family members as well as send money.",
+      "Finmily is a web app that helps users track their expenses. Users are able to share their bank account information with their family members as well as send them money.",
     websiteURL: "https://finmily.herokuapp.com/",
     repositoryURL: "https://github.com/samsoftwaredev/finmily",
   },
@@ -124,15 +131,16 @@ export const PROJECTS = [
     imageAlt: "Website",
     title: "Samuel's Portfolio",
     description:
-      "Website to showcase my work. You can clone the repo and built your own website portfolio.",
+      "Samuel's Portfolio is a website to showcase my work. You can clone this repo and build your own portfolio. The code is easy to read and change.",
     websiteURL: "https://samuelruizportfolio.herokuapp.com/",
     repositoryURL: "https://github.com/samsoftwaredev/portfolio",
   },
   {
     image: game,
     imageAlt: "Game Website",
-    title: "Super Cute Wars",
-    description: "Game similar to rock, paper and scissors",
+    title: "The Wild Warriors",
+    description:
+      'The Wild Warriors is a comic book. I decided to make a game with it characters similar to "Rock paper scissors."',
     websiteURL: "https://super-cute-wars.herokuapp.com/",
     repositoryURL: "https://github.com/samsoftwaredev/super-cute-wars",
   },
