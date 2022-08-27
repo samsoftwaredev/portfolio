@@ -7,7 +7,7 @@ import styles from "./skills.module.scss";
 
 const Skills = () => {
   return (
-    <Section bgColor={colors.pink[900]}>
+    <Section centered bgColor={colors.pink[900]}>
       <Typography
         color="white"
         variant="h3"

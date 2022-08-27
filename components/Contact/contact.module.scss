@@ -24,4 +24,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 1200px;
+  @media (min-width: $sm) {
+    height: 100vmax;
+  }
+  @media (min-width: $md) {
+    height: 1000px;
+  }
+}
+
+.googleForm {
+  height: 100%;
+  width: 600px;
+  backdrop-filter: blur(8px);
+  background-color: rgba($color: white, $alpha: 0.3);
+  border-radius: 10px;
 }

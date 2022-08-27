@@ -23,9 +23,8 @@ and then do:
 - [x] Add Contact form fields
 - [x] Change 'any' prop
 - [] Add a timeline of your work experience
-- [] Improve styling for Projects section
-- [] send email once the form has been submitted (Sendgrid)
-- [] Add captcha before submitting form
+- [x] Improve styling for Projects section
+- [x] Add captcha before submitting form (used google forms)
 - [] Optimize background images
 - [] Add animations and transitions to the page
 - [] Background images should rotate

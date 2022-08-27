@@ -12,6 +12,7 @@ interface Props {
   isTopShadowEnabled?: boolean;
   topNav?: boolean;
   bgColor?: string;
+  centered?: boolean;
 }
 
 const Section = ({
@@ -23,10 +24,12 @@ const Section = ({
   isTopShadowEnabled = false,
   topNav = false,
   bgColor,
+  centered = false,
 }: Props) => {
   const topShadow = isTopShadowEnabled ? styles.topShadow : "";
   const bottomShadow = isBottomShadowEnabled ? styles.bottomShadow : "";
   const topPadding = topNav ? styles.topPadding : "";
+  const isCentered = centered ? styles.centered : "";
   return (
     <div className={css(styles.container, topShadow, bottomShadow)}>
       {bgColor && (
@@ -50,7 +53,11 @@ const Section = ({
           />
         </div>
       )}
-      <div className={[styles.componentContainer, topPadding].join(" ")}>
+      <div
+        className={[styles.componentContainer, topPadding, isCentered].join(
+          " "
+        )}
+      >
         {children}
       </div>
     </div>
