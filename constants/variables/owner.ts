@@ -4,7 +4,7 @@ import { garden, giphy, portfolio, game, finmily } from "../../public/projects";
 export const OWNER = {
   firstName: "Samuel",
   lastName: "Ruiz",
-  job: "Front-End Developer",
+  job: "Software Developer",
   picture: ownerPicture,
   careerStartedYear: 2019,
   description:
