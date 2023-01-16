@@ -4,7 +4,6 @@ const path = require("path");
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  distDir: "build",
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
     prependData: `@import "@/styles/variable.scss";`,
