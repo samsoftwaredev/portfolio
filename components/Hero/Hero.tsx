@@ -17,8 +17,6 @@ const Hero = () => {
     bgs[startIndex]
   );
 
-  const getRandomImage = (count = 0): StaticImageData => bgs[count];
-
   const yearsOfExp = () => currentYear - OWNER.careerStartedYear;
 
   const scrollToElm = (element: string) => {
@@ -31,13 +29,14 @@ const Hero = () => {
 
   useEffect(() => {
     let count = startIndex;
+    const getRandomImage = (count = 0): StaticImageData => bgs[count];
     const interval = setInterval(() => {
       setBgImage(getRandomImage(count));
       count += 1;
       count = count % bgs.length;
     }, 15000);
     return () => clearInterval(interval);
-  }, []);
+  }, [bgs]);
 
   return (
     <Section
