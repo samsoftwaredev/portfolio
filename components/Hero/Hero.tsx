@@ -9,9 +9,10 @@ import { StaticImageData } from "next/image";
 import { Email } from "@mui/icons-material";
 import { css } from "@/utils";
 
+const bgs = [heaven, mary, maria];
+
 const Hero = () => {
   const currentYear = new Date().getFullYear();
-  const bgs = [heaven, mary, maria];
   const startIndex = 0;
   const [bgImage, setBgImage]: [StaticImageData, Function] = useState(
     bgs[startIndex]
@@ -36,7 +37,7 @@ const Hero = () => {
       count = count % bgs.length;
     }, 15000);
     return () => clearInterval(interval);
-  }, [bgs]);
+  }, []);
 
   return (
     <Section
