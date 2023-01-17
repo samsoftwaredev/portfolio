@@ -4,7 +4,7 @@ This repo contains all of the work I have done.
 
 ### Website
 
-https://samuelruizportfolio.herokuapp.com/
+https://samuelruiz-portfolio.netlify.app/
 
 ### Run server
 
