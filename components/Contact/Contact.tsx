@@ -1,9 +1,9 @@
 import { Element } from "react-scroll";
-import { Section, ContactForm } from "@/components";
-import { Typography, Box, colors } from "@mui/material";
+import { Box, colors } from "@mui/material";
+import { Section } from "@/components";
 import { attack } from "@/public/backgrounds";
-import styles from "./contact.module.scss";
 import { css } from "@/utils";
+import styles from "./contact.module.scss";
 
 const Contact = () => {
   const googleFormURL =
@@ -25,13 +25,7 @@ const Contact = () => {
         </h2>
 
         <Box className={styles.formContainer}>
-          <iframe
-            className={styles.googleForm}
-            src={googleFormURL}
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
-          >
+          <iframe className={styles.googleForm} src={googleFormURL}>
             Loading…
           </iframe>
         </Box>

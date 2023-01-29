@@ -2,9 +2,9 @@
 
 This repo contains all of the work I have done.
 
-### Website
+### Live Website
 
-https://samuelruiz-portfolio.netlify.app/
+https://samueldeveloper.com
 
 ### Run server
 
@@ -32,6 +32,6 @@ and then do:
 - [] make navbar sticky on About section
 - [] SEO optimization
 - [] Google Analytics
-- [] Add FE/BE blogs pages
-- [] Finish 'Super Cute Wars' game (embedded iframe) for when user is bored or waiting
+- [] Add FE/BE blog pages
+- [] Finish 'Super Cute Wars' game (embedded iframe)
 - [] Republish AlliesPro and add it to the list of projects

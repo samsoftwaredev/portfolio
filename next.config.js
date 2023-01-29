@@ -11,6 +11,9 @@ const nextConfig = {
   env: {
     PORT: 3000,
   },
+  images: {
+    domains: ["ogeronimo.github.io"],
+  },
 };
 
 module.exports = nextConfig;

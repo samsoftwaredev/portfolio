@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
+import { StaticImageData } from "next/image";
 import { scroller } from "react-scroll";
-import { Section } from "@/components";
+import { useEffect, useState } from "react";
+import { Email } from "@mui/icons-material";
 import { Button, Typography, Box, colors } from "@mui/material";
+import { Section } from "@/components";
 import { heaven, maria, mary } from "@/public/backgrounds";
 import { OWNER } from "@/constants/variables/owner";
-import styles from "./hero.module.scss";
-import { StaticImageData } from "next/image";
-import { Email } from "@mui/icons-material";
 import { css } from "@/utils";
+import styles from "./hero.module.scss";
 
 const bgs = [heaven, mary, maria];
 
