@@ -71,24 +71,24 @@ export const PROJECTS = [
     imageAlt: "Cloud Kitchen Clone App Main Page",
     title: "Cloud Kitties",
     description:
-      "This application shows how I handled huge amounts of data in a ever-growing table. The table uses React Hooks to simplify the component's interface. This app is a clone of Cloud Kitchen, which is a ghost kitchen and virtual restaurant.",
+      "Cloud Kitties handles huge amounts of data in an ever-growing React table. The table uses React Hooks to simplify the component's interface. This app is a clone of Cloud Kitchen, which is a ghost kitchen and virtual restaurant application.",
     websiteURL: "https://cloudkitchen.vercel.app/",
     repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
     objective:
-      "To display my abilities to using React, React Hooks and React State. I also made use of CSS styles.",
+      "Have the web application run smoothly while receiving 10k orders of food and display it on a table.",
     languages:
       "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github",
   },
   {
     image: garden,
     imageAlt: "Rosary App Main Page",
-    title: "Do It For Jesus",
+    title: "DoIt4Jesus",
     description:
-      "This app helps Catholics pray the rosary together. This is a social app that shows every user that is currently logged in. Users can listen to the rosary, change settings and submit their prayers.",
+      "DoIt4Jesus app helps Catholics pray the rosary together. This is a social app that shows every user that is currently logged in. Users can listen to the rosary, change settings and submit their prayers.",
     websiteURL: "https://doit4jesus.com/app",
     repositoryURL: "https://github.com/samsoftwaredev/doit4jesus-app",
     objective:
-      "To display my abilities to using React, React Hooks and React State. I also made cool animations with CSS.",
+      "Allow users to stay online and send messages while listening to audio at the same time.",
     languages:
       "Next.js, JavaScript, TypeScript, React, CSS, Styled-Components, HTML, Git, Github",
   },
@@ -97,7 +97,7 @@ export const PROJECTS = [
     imageAlt: "Website",
     title: "Finmily",
     description:
-      "Finmily is a web app that helps users track their expenses. Users are able to share their bank account information with their family members as well as send them money. Finance for the entire family.",
+      "Finmily is a web app that helps families track their expenses. Users are able to share their bank account information with their family members as well as send them money. Finance for the entire family.",
     websiteURL: "https://finmily.com/",
     repositoryURL: "https://github.com/samsoftwaredev/expense-tracker-frontend",
     objective: "To help families manage their finance in on single place.",
@@ -109,10 +109,10 @@ export const PROJECTS = [
     imageAlt: "Website",
     title: "Samuel's Portfolio",
     description:
-      "Samuel's Portfolio is a website to showcase my work. You can clone this repo and build your own portfolio. The code is easy to read and change.",
+      "Samuel's Portfolio is a website to showcase my work. You can clone this repo and build your own portfolio. The code is easy to read and update.",
     websiteURL: "https://samueldeveloper.com/",
     repositoryURL: "https://github.com/samsoftwaredev/portfolio",
-    objective: "To show case my work.",
+    objective: "To show case my work, awards and skills.",
     languages: "Next.js, React, TypeScript, JavaScript, TypeScript, CSS, HTML",
   },
   // {
@@ -129,9 +129,9 @@ export const PROJECTS = [
     imageAlt: "Game Website",
     title: "The Wild Warriors - Game",
     description:
-      'The Wild Warriors is a comic book. I decided to make a game with it characters similar to "Rock paper scissors."',
+      'The Wild Warriors is a comic book. This app makes the comic book come to live. The game is similar to "Rock, paper, scissors."',
     repositoryURL: "https://github.com/samsoftwaredev/super-cute-wars",
-    objective: "To build a game with the character of a popular comic book.",
+    objective: "To build a game with the characters of a popular comic book.",
     languages: "Vanilla JavaScript, CSS, HTML",
   },
   {
