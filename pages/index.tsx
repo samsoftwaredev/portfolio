@@ -13,10 +13,10 @@ const Home: NextPage = () => {
   return (
     <MainLayout>
       <Hero />
-      <About />
-      <Skills />
       <Projects />
       <Awards />
+      <About />
+      <Skills />
       <Contact />
     </MainLayout>
   );

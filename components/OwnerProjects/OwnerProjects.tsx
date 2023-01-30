@@ -30,12 +30,15 @@ const OwnerProjects = ({ projects }: Props) => {
       {projects.map((p) => (
         <Card key={p.title} className={styles.item}>
           {p.image && (
-            <Image
-              className={styles.image}
-              alt={p.imageAlt}
-              src={p.image}
-              quality={100}
-            />
+            <Box className={styles.imageContainer}>
+              <Image
+                className={styles.image}
+                layout="fill"
+                alt={p.imageAlt}
+                src={p.image}
+                quality={100}
+              />
+            </Box>
           )}
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">

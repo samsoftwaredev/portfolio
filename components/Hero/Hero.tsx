@@ -1,6 +1,6 @@
+import { useEffect, useState } from "react";
 import { StaticImageData } from "next/image";
 import { scroller } from "react-scroll";
-import { useEffect, useState } from "react";
 import { Email } from "@mui/icons-material";
 import { Button, Typography, Box, colors } from "@mui/material";
 import { Section } from "@/components";

@@ -17,7 +17,13 @@ export const OWNER = {
   careerStartedYear: 2016,
   description:
     "Front-End Developer with proven experience at AlliesPro and Bond. Passionate about learning and development with a desire to apply skills on a larger development team. Eager to tackle more complex problems and continue to find ways to enhance user experiences.",
-  bio: `Front-End Developer with years of proven work, and meaningful contributions. With my results-driven mentality, I transformed my team at Bond.tech by seeking, learning, and teaching new, efficient technologies to make aggressive deadlines consistently achievable. Passionate about going the extra mile to ensure that the customer is unquestionably satisfied with the project or service provided. With an emphasis on throughput and stability, I look forward to working collaboratively as well as spearheading independent project.`,
+  bio: `Front-End Developer with years of proven work, and meaningful contributions.
+  With my results-driven mentality, I transformed my team at Bond.tech by seeking, learning, and teaching new, efficient technologies to make aggressive deadlines consistently achievable. Passionate about going the extra mile to ensure that the customer is unquestionably satisfied with the project or service provided.
+   With an emphasis on throughput and stability, I look forward to working collaboratively as well as spearheading independent projects.
+   I graduated with a B.S. in Computer Science from California State University and during that time I built my own startup called AlliesPro.
+   AlliesPro is the world's first Pay Per File System where savvy solo professionals and freelancers get paid on time!
+   If you have any questions, feel free to contact me.
+    `,
 };
 
 export const SKILL1 = [
@@ -71,9 +77,9 @@ export const PROJECTS = [
     imageAlt: "Website Home Page",
     title: "AlliesPro",
     description:
-      "AlliesPro is a gig search and payment web-app that started off as a simple chat to send and receive money. However, has evolved into a payment system that allows freelancers and clients to match, collaborate, and securely make money transactions. Freelancers can apply to gigs around their area and get paid on-time. Furthermore, freelance seekers can post jobs and send money. All of this is brought together in one easy-to-use and beautifully designed website– all of this while making these processes more fun and less awkward.",
+      "AlliesPro is a gig search and payment web-app that started off as a simple chat to send and receive money. However, has evolved into a payment system that allows freelancers and clients to match, collaborate, and securely make money transactions. Freelancers can apply to gigs around their area and get paid on-time.",
     objective:
-      "Send invoices that hold the client's money for a period of time. After any given date or goal has been reached the money will be deposited into your bank account.",
+      "Send invoices that hold the client's money for a period of time. After any given date or goal has been reached the money will be deposited into the user's bank account.",
     languages:
       "HTML, CSS, JavaScript, Vue, Nuxt.js, Node.js, Firebase and other third-party APIs.",
     repositoryURL: "",
@@ -83,13 +89,13 @@ export const PROJECTS = [
     imageAlt: "Cloud Kitchen Clone App Main Page",
     title: "Cloud Kitties",
     description:
-      "Cloud Kitties handles huge amounts of data in an ever-growing React table. The table uses React Hooks to simplify the component's interface. This app is a clone of Cloud Kitchen, which is a ghost kitchen and virtual restaurant application.",
+      "Cloud Kitties handles huge amounts of data in an ever-growing table. The table uses React Hooks to simplify the component's interface. The algorithm used in this app was influenced by an article published by Ying Jiang. This app is a clone of Cloud Kitchen, which is a ghost kitchen and virtual restaurant application.",
     websiteURL: "https://cloudkitchen.vercel.app/",
     repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
     objective:
-      "Have the web application run smoothly while receiving 10k orders of food and display it on a table.",
+      "To have the web application run smoothly while receiving 10k orders of food and display it on a table.",
     languages:
-      "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github",
+      "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github, socket.io",
   },
 
   {
@@ -102,7 +108,7 @@ export const PROJECTS = [
     repositoryURL: "https://github.com/samsoftwaredev/expense-tracker-frontend",
     objective: "To help families manage their finance in on single place.",
     languages:
-      "Firebase, Next.js, React, JavaScript, TypeScript, CSS, HTML, Node.js, Express.js, Postman, Git",
+      "Firebase, Next.js, React, JavaScript, TypeScript, CSS, HTML, Node.js, Express.js, Postman, Git  and other third-party APIs.",
   },
   {
     image: portfolio,
@@ -113,7 +119,8 @@ export const PROJECTS = [
     websiteURL: "https://samueldeveloper.com/",
     repositoryURL: "https://github.com/samsoftwaredev/portfolio",
     objective: "To show case my work, awards and skills.",
-    languages: "Next.js, React, TypeScript, JavaScript, TypeScript, CSS, HTML",
+    languages:
+      "Next.js, React, TypeScript, JavaScript, TypeScript, CSS, HTML, Git, GitHub",
   },
   {
     image: doit4jesus,
@@ -126,7 +133,7 @@ export const PROJECTS = [
     objective:
       "Allow users to stay online and send messages while listening to audio at the same time.",
     languages:
-      "Next.js, JavaScript, TypeScript, React, CSS, Styled-Components, HTML, Git, Github",
+      "Next.js, JavaScript, TypeScript, React, CSS, Styled-Components, HTML, Git, Github  and other third-party APIs.",
   },
   // {
   //   image: garden,
