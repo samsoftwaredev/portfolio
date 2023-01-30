@@ -20,6 +20,8 @@ interface Props {
     imageAlt: string;
     websiteURL?: string;
     repositoryURL?: string;
+    objective?: string;
+    languages?: string;
   }[];
 }
 
@@ -41,8 +43,26 @@ const OwnerProjects = ({ projects }: Props) => {
               {p.title}
             </Typography>
             <Typography variant="body2" color="text.secondary" component="div">
-              {p.description}
+              <b>Description:</b> {p.description}
             </Typography>
+            {p.objective && (
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                component="div"
+              >
+                <b>Objective:</b> {p.objective}
+              </Typography>
+            )}
+            {p.languages && (
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                component="div"
+              >
+                <b>Language:</b> {p.languages}
+              </Typography>
+            )}
           </CardContent>
           <CardActions>
             {p.repositoryURL && (

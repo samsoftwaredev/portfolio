@@ -97,9 +97,13 @@ export const PROJECTS = [
     imageAlt: "Cloud Kitchen Clone App Main Page",
     title: "Cloud Kitties",
     description:
-      "This application shows how I handled huge amounts of data in a ever-growing table.",
+      "This application shows how I handled huge amounts of data in a ever-growing table. The table use React Hooks to simplify the component's interface.",
     websiteURL: "https://cloudkitchen.vercel.app/",
     repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
+    objective:
+      "To display my abilities to using React, React Hooks and React State. I also made cool animations with CSS.",
+    languages:
+      "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github",
   },
   {
     image: garden,
@@ -109,6 +113,10 @@ export const PROJECTS = [
       "This app helps Catholics pray the rosary together. This is a social app that shows every user that is currently logged in. Users can listen to the rosary, change settings and submit their prayers.",
     websiteURL: "https://doit4jesus.com/app",
     repositoryURL: "https://github.com/samsoftwaredev/doit4jesus-app",
+    objective:
+      "To display my abilities to using React, React Hooks and React State. I also made cool animations with CSS.",
+    languages:
+      "Next.js, JavaScript, TypeScript, React, CSS, Styled-Components, HTML, Git, Github",
   },
   {
     image: finmily,
@@ -118,6 +126,9 @@ export const PROJECTS = [
       "Finmily is a web app that helps users track their expenses. Users are able to share their bank account information with their family members as well as send them money. Finance for the entire family.",
     websiteURL: "https://finmily.com/",
     repositoryURL: "https://github.com/samsoftwaredev/expense-tracker-frontend",
+    objective: "To help families manage their finance in on single place.",
+    languages:
+      "Firebase, Next.js, React, JavaScript, TypeScript, CSS, HTML, Node.js, Express.js, Postman, Git",
   },
   {
     image: portfolio,
@@ -127,6 +138,8 @@ export const PROJECTS = [
       "Samuel's Portfolio is a website to showcase my work. You can clone this repo and build your own portfolio. The code is easy to read and change.",
     websiteURL: "https://samueldeveloper.com/",
     repositoryURL: "https://github.com/samsoftwaredev/portfolio",
+    objective: "To show case my work.",
+    languages: "Next, React, JavaScript, TypeScript, CSS, HTML",
   },
   // {
   //   image: garden,
@@ -140,10 +153,12 @@ export const PROJECTS = [
   {
     image: game,
     imageAlt: "Game Website",
-    title: "The Wild Warriors",
+    title: "The Wild Warriors - Game",
     description:
       'The Wild Warriors is a comic book. I decided to make a game with it characters similar to "Rock paper scissors."',
     repositoryURL: "https://github.com/samsoftwaredev/super-cute-wars",
+    objective: "To build a game with the character of a popular comic book.",
+    languages: "Pure JavaScript, CSS, HTML",
   },
   {
     image: giphy,
@@ -152,5 +167,6 @@ export const PROJECTS = [
     description:
       "GIPHY is a search engine that allows users to search for and share animated GIF files.",
     repositoryURL: "https://github.com/samsoftwaredev/giphy-clone",
+    languages: "React, CSS, HTML",
   },
 ];
