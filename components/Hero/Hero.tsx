@@ -4,12 +4,12 @@ import { useEffect, useState } from "react";
 import { Email } from "@mui/icons-material";
 import { Button, Typography, Box, colors } from "@mui/material";
 import { Section } from "@/components";
-import { programming, cup, matrix } from "@/public/backgrounds";
+import { programming, matrix } from "@/public/backgrounds";
 import { OWNER } from "@/constants/variables/owner";
 import { css } from "@/utils";
 import styles from "./hero.module.scss";
 
-const bgs = [programming, matrix, cup];
+const bgs = [programming, matrix];
 
 const Hero = () => {
   const currentYear = new Date().getFullYear();

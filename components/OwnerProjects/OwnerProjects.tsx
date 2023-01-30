@@ -1,5 +1,5 @@
 import * as React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import {
   Box,
   Card,
@@ -8,9 +8,8 @@ import {
   Button,
   Typography,
 } from "@mui/material";
-import { StaticImageData } from "next/image";
-import styles from "./ownerProjects.module.scss";
 import { GitHub, RemoveRedEye } from "@mui/icons-material";
+import styles from "./ownerProjects.module.scss";
 
 interface Props {
   projects: {

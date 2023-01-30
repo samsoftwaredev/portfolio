@@ -17,7 +17,7 @@ export const OWNER = {
   careerStartedYear: 2016,
   description:
     "Front-End Developer with proven experience at AlliesPro and Bond. Passionate about learning and development with a desire to apply skills on a larger development team. Eager to tackle more complex problems and continue to find ways to enhance user experiences.",
-  bio: "",
+  bio: `Front-End Developer with years of proven work, and meaningful contributions. With my results-driven mentality, I transformed my team at Bond.tech by seeking, learning, and teaching new, efficient technologies to make aggressive deadlines consistently achievable. Passionate about going the extra mile to ensure that the customer is unquestionably satisfied with the project or service provided. With an emphasis on throughput and stability, I look forward to working collaboratively as well as spearheading independent project.`,
 };
 
 export const SKILL1 = [
