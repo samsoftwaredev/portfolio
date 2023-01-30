@@ -92,21 +92,23 @@ export const PROJECTS = [
   //   description: "Helping Freelancers get paid on time",
   //   repositoryURL: "",
   // },
-  // {
-  //   image: rosaryApp,
-  //   imageAlt: "Rosary App",
-  //   title: "Rosary Webapp",
-  //   description: "User are able to pray the rosary",
-  //   repositoryURL: "",
-  // },
+  {
+    image: garden,
+    imageAlt: "Rosary App Main Page",
+    title: "Do It For Jesus",
+    description:
+      "This app helps Catholics pray the rosary together. This is a social app that shows every user that is currently logged in. Users can listen to the rosary, change settings and submit their prayers.",
+    websiteURL: "https://doit4jesus.com/app",
+    repositoryURL: "https://github.com/samsoftwaredev/doit4jesus-app",
+  },
   {
     image: finmily,
     imageAlt: "Website",
     title: "Finmily",
     description:
-      "Finmily is a web app that helps users track their expenses. Users are able to share their bank account information with their family members as well as send them money.",
-    websiteURL: "https://finmily.herokuapp.com/",
-    repositoryURL: "https://github.com/samsoftwaredev/finmily",
+      "Finmily is a web app that helps users track their expenses. Users are able to share their bank account information with their family members as well as send them money. Finance for the entire family.",
+    websiteURL: "https://finmily.com/",
+    repositoryURL: "https://github.com/samsoftwaredev/expense-tracker-frontend",
   },
   {
     image: portfolio,
@@ -114,25 +116,24 @@ export const PROJECTS = [
     title: "Samuel's Portfolio",
     description:
       "Samuel's Portfolio is a website to showcase my work. You can clone this repo and build your own portfolio. The code is easy to read and change.",
-    websiteURL: "https://samuelruizportfolio.herokuapp.com/",
+    websiteURL: "https://samueldeveloper.com/",
     repositoryURL: "https://github.com/samsoftwaredev/portfolio",
   },
-  {
-    image: garden,
-    imageAlt: "Website",
-    title: "Luisa's Garden",
-    description:
-      "Luisa's Garden is a website that teaches orchid enthusiasts how to grow, reproduce and maintain orchids.",
-    websiteURL: "",
-    repositoryURL: "https://github.com/samsoftwaredev/luisa-garden",
-  },
+  // {
+  //   image: garden,
+  //   imageAlt: "Website",
+  //   title: "Luisa's Garden",
+  //   description:
+  //     "Luisa's Garden is a website that teaches orchid enthusiasts how to grow, reproduce and maintain orchids.",
+  //   websiteURL: "",
+  //   repositoryURL: "https://github.com/samsoftwaredev/luisa-garden",
+  // },
   {
     image: game,
     imageAlt: "Game Website",
     title: "The Wild Warriors",
     description:
       'The Wild Warriors is a comic book. I decided to make a game with it characters similar to "Rock paper scissors."',
-    websiteURL: "https://super-cute-wars.herokuapp.com/",
     repositoryURL: "https://github.com/samsoftwaredev/super-cute-wars",
   },
   {
@@ -141,7 +142,6 @@ export const PROJECTS = [
     title: "Giphy Clone",
     description:
       "GIPHY is a search engine that allows users to search for and share animated GIF files.",
-    websiteURL: "https://rocky-sierra-20177.herokuapp.com/",
     repositoryURL: "https://github.com/samsoftwaredev/giphy-clone",
   },
 ];
