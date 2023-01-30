@@ -1,3 +1,4 @@
+import { GitHub, LinkedIn } from "@mui/icons-material";
 import { ownerPicture } from "../../public/owner";
 import {
   giphy,
@@ -26,48 +27,70 @@ export const OWNER = {
     `,
 };
 
-export const SKILL1 = [
-  {
-    name: "Problem Solver",
-  },
-  {
-    name: "Creative",
-  },
-  {
-    name: "UI and UX Designer",
-  },
-  {
-    name: "System Architecture Designer",
-  },
-];
+export const SKILL1 = {
+  title: "Overall",
+  list: [
+    {
+      name: "Problem Solver",
+    },
+    {
+      name: "Creative",
+    },
+    {
+      name: "UI and UX Designer",
+    },
+    {
+      name: "System Architecture Designer",
+    },
+  ],
+};
 
-export const SKILL2 = [
-  {
-    name: "React",
-  },
-  {
-    name: "JavaScript & TypeScript",
-  },
-  {
-    name: "CSS",
-  },
-  {
-    name: "HTML",
-  },
-];
+export const SKILL2 = {
+  title: "Front-End Languages",
+  list: [
+    {
+      name: "React",
+    },
+    {
+      name: "JavaScript & TypeScript",
+    },
+    {
+      name: "CSS & HTML",
+    },
+    {
+      name: "GraphQL",
+    },
+  ],
+};
 
-export const SKILL3 = [
+export const SKILL3 = {
+  title: "Back-End Languages",
+  list: [
+    {
+      name: "Node.js with Express",
+    },
+    {
+      name: "No SQL - Firebase",
+    },
+    {
+      name: "SQL - Postgres",
+    },
+    {
+      name: "Terminal/Command Prompt",
+    },
+  ],
+};
+
+export const SOCIAL_MEDIA = [
   {
-    name: "Node.js with Express",
+    name: "LinkedIn",
+    icon: LinkedIn,
+    url: "https://www.linkedin.com/in/samuel-ruiz-839895142/",
   },
   {
-    name: "No SQL - Firebase",
-  },
-  {
-    name: "SQL - Postgres",
-  },
-  {
-    name: "Terminal/Command Prompt",
+    name: "GitHub",
+    icon: GitHub,
+    url: "https://github.com/samsoftwaredev/",
   },
 ];
 

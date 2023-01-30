@@ -7,7 +7,7 @@ import styles from "./skills.module.scss";
 
 const Skills = () => {
   return (
-    <Section centered bgColor={colors.pink[900]}>
+    <Section isBottomShadowEnabled centered bgColor={colors.pink[900]}>
       <Typography
         color="white"
         variant="h3"
@@ -26,21 +26,21 @@ const Skills = () => {
         <Box className={styles.skillsList}>
           <Box p={2} minWidth={300}>
             <Typography variant="h5" gutterBottom className="secondaryText">
-              Overall
+              {SKILL1.title}
             </Typography>
-            <OwnerSkills skills={SKILL1} />
+            <OwnerSkills skills={SKILL1.list} />
           </Box>
           <Box p={2} minWidth={300}>
             <Typography variant="h5" gutterBottom className="secondaryText">
-              Front-End Languages
+              {SKILL2.title}
             </Typography>
-            <OwnerSkills skills={SKILL2} />
+            <OwnerSkills skills={SKILL2.list} />
           </Box>
           <Box p={2} minWidth={300}>
             <Typography variant="h5" gutterBottom className="secondaryText">
-              Back-End Languages
+              {SKILL3.title}
             </Typography>
-            <OwnerSkills skills={SKILL3} />
+            <OwnerSkills skills={SKILL3.list} />
           </Box>
         </Box>
       </Element>

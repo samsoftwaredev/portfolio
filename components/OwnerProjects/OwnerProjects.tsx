@@ -41,7 +41,12 @@ const OwnerProjects = ({ projects }: Props) => {
             </Box>
           )}
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography
+              align="center"
+              gutterBottom
+              variant="h5"
+              component="div"
+            >
               {p.title}
             </Typography>
             <Typography variant="body2" color="text.secondary" component="div">

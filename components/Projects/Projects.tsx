@@ -7,7 +7,7 @@ import styles from "./projects.module.scss";
 
 const Projects = () => {
   return (
-    <Section centered isBottomShadowEnabled bgColor={colors.pink[900]}>
+    <Section centered isTopShadowEnabled bgColor={colors.pink[900]}>
       <Typography
         color="white"
         variant="h3"
