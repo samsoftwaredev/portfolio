@@ -1,4 +1,4 @@
-export { default as heaven } from "./heaven.jpg";
-export { default as maria } from "./maria.jpg";
-export { default as mary } from "./mary.jpg";
-export { default as attack } from "./attack.jpg";
+export { default as cup } from "./cup.jpg";
+export { default as board } from "./board.jpg";
+export { default as programming } from "./programming.png";
+export { default as matrix } from "./matrix.jpg";

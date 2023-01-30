@@ -32,7 +32,10 @@
 .biographyContainer {
   width: 100%;
   @media (min-width: $desktop) {
-    width: 300px;
+    width: 350px;
+  }
+  @media (min-width: $xl) {
+    width: 550px;
   }
 }
 

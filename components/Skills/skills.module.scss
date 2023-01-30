@@ -13,6 +13,7 @@
   align-items: center;
   @media (min-width: $md) {
     justify-content: center;
+    align-items: start;
     flex-direction: row;
   }
 }

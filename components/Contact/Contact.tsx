@@ -1,7 +1,6 @@
 import { Element } from "react-scroll";
 import { Box, colors } from "@mui/material";
 import { Section } from "@/components";
-import { attack } from "@/public/backgrounds";
 import { css } from "@/utils";
 import styles from "./contact.module.scss";
 
@@ -13,7 +12,6 @@ const Contact = () => {
     <Section
       centered
       isTopShadowEnabled
-      bgImage={attack}
       imageAlt="Prepare for judgment day"
       isOverlay
       bgColor={colors.grey[900]}

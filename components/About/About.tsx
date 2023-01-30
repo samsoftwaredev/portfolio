@@ -18,7 +18,7 @@ const About = () => {
           <Box px={5} className={styles.imageContainer}>
             <Image
               className={css(styles.profileImage, "circle")}
-              alt={`${OWNER.firstName} ${OWNER.lastName}`}
+              alt={OWNER.fullName}
               src={OWNER.picture}
               quality={100}
             />

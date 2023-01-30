@@ -4,12 +4,12 @@ import { useEffect, useState } from "react";
 import { Email } from "@mui/icons-material";
 import { Button, Typography, Box, colors } from "@mui/material";
 import { Section } from "@/components";
-import { heaven, maria, mary } from "@/public/backgrounds";
+import { programming, cup, matrix } from "@/public/backgrounds";
 import { OWNER } from "@/constants/variables/owner";
 import { css } from "@/utils";
 import styles from "./hero.module.scss";
 
-const bgs = [heaven, mary, maria];
+const bgs = [programming, matrix, cup];
 
 const Hero = () => {
   const currentYear = new Date().getFullYear();
@@ -49,7 +49,7 @@ const Hero = () => {
     >
       <Box className={styles.container}>
         <h1 className={css("primaryText", styles.title)}>
-          <small className="subPrimaryText">A Very Skilled</small>
+          <small className="subPrimaryText">Hi I&apos;m {OWNER.fullName}</small>
           {OWNER.job}
           <small className="subPrimaryText">
             + {yearsOfExp()} years experience
@@ -61,15 +61,11 @@ const Hero = () => {
             gutterBottom
             className={css("secondaryText", styles.biography)}
           >
-            I&apos;m a Web Developer. I have worked in multiple startups and I
-            have had the opportunity to build my own startup. I have worked as a
-            front-end developer for a couple of years now and I have seen it
-            all.
+            {OWNER.description}
           </Typography>
           <Box className={styles.cta}>
             <Button
               onClick={() => scrollToElm("contact")}
-              color="secondary"
               variant="contained"
               startIcon={<Email />}
             >

@@ -4,83 +4,56 @@ import { garden, giphy, portfolio, game, finmily } from "../../public/projects";
 export const OWNER = {
   firstName: "Samuel",
   lastName: "Ruiz",
-  job: "Software Developer",
+  fullName: "Samuel Ruiz",
+  job: "Front-End Developer",
   picture: ownerPicture,
-  careerStartedYear: 2019,
+  careerStartedYear: 2016,
   description:
-    "Samuel Ruiz Portfolio. I'm a Web Developer. I have worked in multiple startups and I have had the opportunity to build my own startup. I have worked as a front-end developer for a couple of years now and I have seen it all. Everything from optimization to accessibility, to testing and writing efficient algorithms. I have worked in multiple startups and I have had the opportunity to build my own startup.",
+    "Front-End Developer with proven experience at AlliesPro and Bond. Passionate about learning and development with a desire to apply skills on a larger development team. Eager to tackle more complex problems and continue to find ways to maximize user experiences.",
 };
 
 export const SKILL1 = [
   {
-    name: "Problem Solving",
-    knowledgeAmount: 90,
+    name: "Problem Solver",
   },
   {
-    name: "Managing Complexity",
-    knowledgeAmount: 75,
+    name: "Creative",
   },
   {
-    name: "Code Optimization Skills",
-    knowledgeAmount: 80,
+    name: "UI and UX Designer",
   },
   {
-    name: "Creativity",
-    knowledgeAmount: 95,
-  },
-  {
-    name: "UI Designer",
-    knowledgeAmount: 65,
-  },
-  {
-    name: "UX Designer",
-    knowledgeAmount: 70,
-  },
-  {
-    name: "System Architecture",
-    knowledgeAmount: 70,
+    name: "System Architecture Designer",
   },
 ];
 
 export const SKILL2 = [
   {
-    name: "JavaScript",
-    knowledgeAmount: 90,
+    name: "React",
   },
   {
-    name: "TypeScript",
-    knowledgeAmount: 85,
+    name: "JavaScript & TypeScript",
   },
   {
     name: "CSS",
-    knowledgeAmount: 75,
   },
   {
     name: "HTML",
-    knowledgeAmount: 85,
-  },
-  {
-    name: "React",
-    knowledgeAmount: 85,
   },
 ];
 
 export const SKILL3 = [
   {
-    name: "Node.js",
-    knowledgeAmount: 80,
+    name: "Node.js with Express",
   },
   {
-    name: "Express",
-    knowledgeAmount: 85,
+    name: "No SQL - Firebase",
   },
   {
-    name: "SQL",
-    knowledgeAmount: 50,
+    name: "SQL - Postgres",
   },
   {
     name: "Terminal/Command Prompt",
-    knowledgeAmount: 40,
   },
 ];
 

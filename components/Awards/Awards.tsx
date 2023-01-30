@@ -7,7 +7,12 @@ import styles from "./awards.module.scss";
 
 const Awards = () => {
   return (
-    <Section centered bgColor={colors.grey[900]}>
+    <Section
+      isTopShadowEnabled
+      isBottomShadowEnabled
+      centered
+      bgColor={colors.grey[900]}
+    >
       <Typography
         color="white"
         variant="h3"
