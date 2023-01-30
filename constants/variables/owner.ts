@@ -9,7 +9,8 @@ export const OWNER = {
   picture: ownerPicture,
   careerStartedYear: 2016,
   description:
-    "Front-End Developer with proven experience at AlliesPro and Bond. Passionate about learning and development with a desire to apply skills on a larger development team. Eager to tackle more complex problems and continue to find ways to maximize user experiences.",
+    "Front-End Developer with proven experience at AlliesPro and Bond. Passionate about learning and development with a desire to apply skills on a larger development team. Eager to tackle more complex problems and continue to find ways to enhance user experiences.",
+  bio: "",
 };
 
 export const SKILL1 = [
