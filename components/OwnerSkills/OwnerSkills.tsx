@@ -3,7 +3,6 @@ import styles from "./ownerSkills.module.scss";
 interface Props {
   skills: {
     name: string;
-    knowledgeAmount: number;
   }[];
 }
 
