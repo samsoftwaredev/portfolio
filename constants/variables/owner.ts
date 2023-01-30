@@ -1,5 +1,14 @@
 import { ownerPicture } from "../../public/owner";
-import { garden, giphy, portfolio, game, finmily } from "../../public/projects";
+import {
+  garden,
+  giphy,
+  portfolio,
+  game,
+  finmily,
+  alliespro,
+  cloudKitties,
+  doit4jesus,
+} from "../../public/projects";
 
 export const OWNER = {
   firstName: "Samuel",
@@ -59,15 +68,18 @@ export const SKILL3 = [
 ];
 
 export const PROJECTS = [
-  // {
-  //   image: alliespro,
-  //   imageAlt: "Website Home Page",
-  //   title: "AlliesPro",
-  //   description: "Helping Freelancers get paid on time",
-  //   repositoryURL: "",
-  // },
   {
-    image: garden,
+    image: alliespro,
+    imageAlt: "Website Home Page",
+    title: "AlliesPro",
+    description:
+      "AlliesPro is a gig search and payment web-app that started off as a simple chat to send and receive money. However, has evolved into a payment system that allows freelancers and clients to match, collaborate, and securely make money transactions. Freelancers can apply to gigs around their area and get paid on-time. Furthermore, freelance seekers can post jobs and send money. All of this is brought together in one easy-to-use and beautifully designed website– all of this while making these processes more fun and less awkward.",
+    objective:
+      "Send invoices that hold the client's money for a period of time. After any given date or goal has been reached the money will be deposited into your bank account.",
+    repositoryURL: "",
+  },
+  {
+    image: cloudKitties,
     imageAlt: "Cloud Kitchen Clone App Main Page",
     title: "Cloud Kitties",
     description:
@@ -80,7 +92,7 @@ export const PROJECTS = [
       "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github",
   },
   {
-    image: garden,
+    image: doit4jesus,
     imageAlt: "Rosary App Main Page",
     title: "DoIt4Jesus",
     description:
@@ -124,16 +136,16 @@ export const PROJECTS = [
   //   websiteURL: "",
   //   repositoryURL: "https://github.com/samsoftwaredev/luisa-garden",
   // },
-  {
-    image: game,
-    imageAlt: "Game Website",
-    title: "The Wild Warriors - Game",
-    description:
-      'The Wild Warriors is a comic book. This app makes the comic book come to live. The game is similar to "Rock, paper, scissors."',
-    repositoryURL: "https://github.com/samsoftwaredev/super-cute-wars",
-    objective: "To build a game with the characters of a popular comic book.",
-    languages: "Vanilla JavaScript, CSS, HTML",
-  },
+  // {
+  //   image: game,
+  //   imageAlt: "Game Website",
+  //   title: "The Wild Warriors - Game",
+  //   description:
+  //     'The Wild Warriors is a comic book. This app makes the comic book come to live. The game is similar to "Rock, paper, scissors."',
+  //   repositoryURL: "https://github.com/samsoftwaredev/super-cute-wars",
+  //   objective: "To build a game with the characters of a popular comic book.",
+  //   languages: "Vanilla JavaScript, CSS, HTML",
+  // },
   {
     image: giphy,
     imageAlt: "Website",
