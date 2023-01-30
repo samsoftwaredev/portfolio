@@ -10,13 +10,12 @@ import { css } from "@/utils";
 import styles from "./hero.module.scss";
 
 const bgs = [programming, matrix];
+const min = 0;
+const max = bgs.length - 1;
 
 const Hero = () => {
   const currentYear = new Date().getFullYear();
-  const startIndex = 0;
-  const [bgImage, setBgImage]: [StaticImageData, Function] = useState(
-    bgs[startIndex]
-  );
+  const [bgImage, setBgImage]: [StaticImageData, Function] = useState(bgs[0]);
 
   const yearsOfExp = () => currentYear - OWNER.careerStartedYear;
 
@@ -29,13 +28,12 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    let count = startIndex;
-    const getRandomImage = (count = 0): StaticImageData => bgs[count];
+    const getRandomImage = (): number =>
+      Math.round(Math.random() * (max - min) + min);
     const interval = setInterval(() => {
-      setBgImage(getRandomImage(count));
-      count += 1;
-      count = count % bgs.length;
-    }, 15000);
+      const bg = bgs[getRandomImage()];
+      setBgImage(bg);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
