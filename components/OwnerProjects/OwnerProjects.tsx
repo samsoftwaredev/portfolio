@@ -1,4 +1,5 @@
 import * as React from "react";
+import Image from "next/image";
 import {
   Box,
   Card,
@@ -15,7 +16,7 @@ interface Props {
   projects: {
     title: string;
     description: string;
-    image: StaticImageData;
+    image?: StaticImageData;
     imageAlt: string;
     websiteURL?: string;
     repositoryURL?: string;
@@ -27,12 +28,14 @@ const OwnerProjects = ({ projects }: Props) => {
     <Box className={styles.container}>
       {projects.map((p) => (
         <Card key={p.title} className={styles.item}>
-          {/* <Image
+          {/* {p.image && (
+            <Image
               className={styles.image}
               alt={p.imageAlt}
               src={p.image}
               quality={100}
-            /> */}
+            />
+          )} */}
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {p.title}

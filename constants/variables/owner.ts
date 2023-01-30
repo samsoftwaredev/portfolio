@@ -94,6 +94,15 @@ export const PROJECTS = [
   // },
   {
     image: garden,
+    imageAlt: "Cloud Kitchen Clone App Main Page",
+    title: "Cloud Kitties",
+    description:
+      "This application shows how I handled huge amounts of data in a ever-growing table.",
+    websiteURL: "https://cloudkitchen.vercel.app/",
+    repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
+  },
+  {
+    image: garden,
     imageAlt: "Rosary App Main Page",
     title: "Do It For Jesus",
     description:
