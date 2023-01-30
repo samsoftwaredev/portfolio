@@ -1,12 +1,10 @@
 import { ownerPicture } from "../../public/owner";
 import {
-  garden,
   giphy,
   portfolio,
-  game,
   finmily,
   alliespro,
-  cloudKitties,
+  cloudkitties,
   doit4jesus,
 } from "../../public/projects";
 
@@ -81,7 +79,7 @@ export const PROJECTS = [
     repositoryURL: "",
   },
   {
-    image: cloudKitties,
+    image: cloudkitties,
     imageAlt: "Cloud Kitchen Clone App Main Page",
     title: "Cloud Kitties",
     description:
