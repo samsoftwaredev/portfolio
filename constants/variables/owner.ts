@@ -76,6 +76,8 @@ export const PROJECTS = [
       "AlliesPro is a gig search and payment web-app that started off as a simple chat to send and receive money. However, has evolved into a payment system that allows freelancers and clients to match, collaborate, and securely make money transactions. Freelancers can apply to gigs around their area and get paid on-time. Furthermore, freelance seekers can post jobs and send money. All of this is brought together in one easy-to-use and beautifully designed website– all of this while making these processes more fun and less awkward.",
     objective:
       "Send invoices that hold the client's money for a period of time. After any given date or goal has been reached the money will be deposited into your bank account.",
+    languages:
+      "HTML, CSS, JavaScript, Vue, Nuxt.js, Node.js, Firebase and other third-party APIs.",
     repositoryURL: "",
   },
   {
@@ -91,19 +93,7 @@ export const PROJECTS = [
     languages:
       "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github",
   },
-  {
-    image: doit4jesus,
-    imageAlt: "Rosary App Main Page",
-    title: "DoIt4Jesus",
-    description:
-      "DoIt4Jesus app helps Catholics pray the rosary together. This is a social app that shows every user that is currently logged in. Users can listen to the rosary, change settings and submit their prayers.",
-    websiteURL: "https://doit4jesus.com/app",
-    repositoryURL: "https://github.com/samsoftwaredev/doit4jesus-app",
-    objective:
-      "Allow users to stay online and send messages while listening to audio at the same time.",
-    languages:
-      "Next.js, JavaScript, TypeScript, React, CSS, Styled-Components, HTML, Git, Github",
-  },
+
   {
     image: finmily,
     imageAlt: "Website",
@@ -126,6 +116,19 @@ export const PROJECTS = [
     repositoryURL: "https://github.com/samsoftwaredev/portfolio",
     objective: "To show case my work, awards and skills.",
     languages: "Next.js, React, TypeScript, JavaScript, TypeScript, CSS, HTML",
+  },
+  {
+    image: doit4jesus,
+    imageAlt: "Rosary App Main Page",
+    title: "DoIt4Jesus",
+    description:
+      "DoIt4Jesus app helps Catholics pray the rosary together. This is a social app that shows every user that is currently logged in. Users can listen to the rosary, change settings and submit their prayers.",
+    websiteURL: "https://doit4jesus.com/app",
+    repositoryURL: "https://github.com/samsoftwaredev/doit4jesus-app",
+    objective:
+      "Allow users to stay online and send messages while listening to audio at the same time.",
+    languages:
+      "Next.js, JavaScript, TypeScript, React, CSS, Styled-Components, HTML, Git, Github",
   },
   // {
   //   image: garden,
