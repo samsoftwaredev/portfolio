@@ -97,11 +97,11 @@ export const PROJECTS = [
     imageAlt: "Cloud Kitchen Clone App Main Page",
     title: "Cloud Kitties",
     description:
-      "This application shows how I handled huge amounts of data in a ever-growing table. The table use React Hooks to simplify the component's interface.",
+      "This application shows how I handled huge amounts of data in a ever-growing table. The table uses React Hooks to simplify the component's interface. This app is a clone of Cloud Kitchen, which is a ghost kitchen and virtual restaurant.",
     websiteURL: "https://cloudkitchen.vercel.app/",
     repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
     objective:
-      "To display my abilities to using React, React Hooks and React State. I also made cool animations with CSS.",
+      "To display my abilities to using React, React Hooks and React State. I also made use of CSS styles.",
     languages:
       "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github",
   },
@@ -139,7 +139,7 @@ export const PROJECTS = [
     websiteURL: "https://samueldeveloper.com/",
     repositoryURL: "https://github.com/samsoftwaredev/portfolio",
     objective: "To show case my work.",
-    languages: "Next, React, JavaScript, TypeScript, CSS, HTML",
+    languages: "Next.js, React, TypeScript, JavaScript, TypeScript, CSS, HTML",
   },
   // {
   //   image: garden,
@@ -158,7 +158,7 @@ export const PROJECTS = [
       'The Wild Warriors is a comic book. I decided to make a game with it characters similar to "Rock paper scissors."',
     repositoryURL: "https://github.com/samsoftwaredev/super-cute-wars",
     objective: "To build a game with the character of a popular comic book.",
-    languages: "Pure JavaScript, CSS, HTML",
+    languages: "Vanilla JavaScript, CSS, HTML",
   },
   {
     image: giphy,
@@ -167,6 +167,6 @@ export const PROJECTS = [
     description:
       "GIPHY is a search engine that allows users to search for and share animated GIF files.",
     repositoryURL: "https://github.com/samsoftwaredev/giphy-clone",
-    languages: "React, CSS, HTML",
+    languages: "React, JavaScript, CSS, HTML",
   },
 ];
