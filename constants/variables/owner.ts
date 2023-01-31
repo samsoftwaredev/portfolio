@@ -112,7 +112,7 @@ export const PROJECTS = [
     imageAlt: "Cloud Kitchen Clone App Main Page",
     title: "Cloud Kitties",
     description:
-      "Cloud Kitties handles huge amounts of data in an ever-growing table. The table uses React Hooks to simplify the component's interface. The algorithm used in this app was influenced by an article published by Ying Jiang. This app is a clone of Cloud Kitchen, which is a ghost kitchen and virtual restaurant application.",
+      "Cloud Kitties handles huge amounts of data in an ever-growing table. The table component uses React Hooks to simplify the component's interface. The algorithm used in this app was influenced by an article published by Ying Jiang. This app is a clone of Cloud Kitchen, which is a ghost kitchen and virtual restaurant application.",
     websiteURL: "https://cloudkitchen.vercel.app/",
     repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
     objective:
@@ -125,12 +125,12 @@ export const PROJECTS = [
     imageAlt: "Website",
     title: "Samuel's Portfolio",
     description:
-      "Samuel's Portfolio is a website to showcase my work. You can clone this repo and build your own portfolio. The code is easy to read and update.",
+      "Samuel's Portfolio is a website to showcase my work, projects and skills. In the future I will add a blog section. You can clone this repo and build your own portfolio. The code is easy to read and update.",
     websiteURL: "https://samueldeveloper.com/",
     repositoryURL: "https://github.com/samsoftwaredev/portfolio",
     objective: "To show case my work, awards and skills.",
     languages:
-      "Next.js, React, TypeScript, JavaScript, TypeScript, CSS, HTML, Git, GitHub.",
+      "Next.js, React, TypeScript, JavaScript, TypeScript, CSS, HTML, Git, GitHub, Google Forms.",
   },
   {
     image: finmily,
@@ -142,7 +142,7 @@ export const PROJECTS = [
     repositoryURL: "https://github.com/samsoftwaredev/expense-tracker-frontend",
     objective: "To help families manage their finance in on single place.",
     languages:
-      "Firebase, Next.js, React, JavaScript, TypeScript, CSS, HTML, Node.js, Express.js, Postman, Git  and other third-party APIs.",
+      "Firebase, Next.js, React, JavaScript, TypeScript, CSS, HTML, Node.js, Express.js, Git  and other third-party APIs.",
   },
   {
     image: doit4jesus,
