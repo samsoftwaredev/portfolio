@@ -71,7 +71,9 @@ const OwnerProjects = ({ projects }: Props) => {
               </Typography>
             )}
           </CardContent>
-          <CardActions>
+          <CardActions
+            sx={{ display: "flex", justifyContent: "space-between" }}
+          >
             {p.repositoryURL && (
               <Button startIcon={<GitHub />} href={p.repositoryURL}>
                 Repository

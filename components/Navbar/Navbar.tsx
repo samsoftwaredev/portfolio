@@ -6,9 +6,8 @@ import Logo from "../Logo";
 const Navbar = () => {
   const menu = [
     { name: "About", hash: "about" },
-    { name: "Skills", hash: "skills" },
     { name: "Projects", hash: "projects" },
-    { name: "Contact", hash: "contact" },
+    { name: "Contact Me", hash: "contact" },
   ];
 
   return (

@@ -17,7 +17,7 @@ const Awards = () => {
         <small className={css(styles.subTitle, "subPrimaryText")}>
           Things I have achieved
         </small>
-        Awards/News
+        Awards / News
       </Typography>
       <Element name="awards" className={css(styles.subTitle, "subPrimaryText")}>
         <Box className={styles.container}>
