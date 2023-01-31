@@ -16,10 +16,10 @@ const Awards = () => {
       >
         Awards & News
       </Typography>
-      <Element name="awards" className={css(styles.subTitle, "subPrimaryText")}>
+      <Element name="awards">
         <Box className={styles.container}>
-          <Typography className={css(styles.subTitle, "primaryText")}>
-            FITHER - Video Game (2019)
+          <Typography className={css(styles.subTitle, "subPrimaryText")}>
+            FITHER - Video Game
           </Typography>
           <Typography className={styles.content}>
             An Obesity Prevention Game. First-place winner in “Shape of Health-
@@ -40,8 +40,8 @@ const Awards = () => {
           </Box>
         </Box>
         <Box className={styles.container}>
-          <Typography className={css(styles.subTitle, "primaryText")}>
-            THE PIONEER NEWSPAPER (2019)
+          <Typography className={css(styles.subTitle, "subPrimaryText")}>
+            THE PIONEER NEWSPAPER
           </Typography>
           <Typography className={styles.content}>
             East Bay University newsaper coverage. Samuel Ruiz Geronimo, an
