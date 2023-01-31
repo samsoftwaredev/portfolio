@@ -59,7 +59,7 @@ const OwnerProjects = ({ projects }: Props) => {
             )}
             {p.languages && (
               <Typography variant="body1" component="div">
-                <b>Language:</b> {p.languages}
+                <b>Languages:</b> {p.languages}
               </Typography>
             )}
           </CardContent>
@@ -81,7 +81,7 @@ const OwnerProjects = ({ projects }: Props) => {
                 href={p.websiteURL}
                 variant="contained"
               >
-                View
+                View App
               </Button>
             )}
           </CardActions>

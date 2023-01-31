@@ -120,7 +120,18 @@ export const PROJECTS = [
     languages:
       "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github, socket.io",
   },
-
+  {
+    image: portfolio,
+    imageAlt: "Website",
+    title: "Samuel's Portfolio",
+    description:
+      "Samuel's Portfolio is a website to showcase my work. You can clone this repo and build your own portfolio. The code is easy to read and update.",
+    websiteURL: "https://samueldeveloper.com/",
+    repositoryURL: "https://github.com/samsoftwaredev/portfolio",
+    objective: "To show case my work, awards and skills.",
+    languages:
+      "Next.js, React, TypeScript, JavaScript, TypeScript, CSS, HTML, Git, GitHub.",
+  },
   {
     image: finmily,
     imageAlt: "Website",
@@ -132,18 +143,6 @@ export const PROJECTS = [
     objective: "To help families manage their finance in on single place.",
     languages:
       "Firebase, Next.js, React, JavaScript, TypeScript, CSS, HTML, Node.js, Express.js, Postman, Git  and other third-party APIs.",
-  },
-  {
-    image: portfolio,
-    imageAlt: "Website",
-    title: "Samuel's Portfolio",
-    description:
-      "Samuel's Portfolio is a website to showcase my work. You can clone this repo and build your own portfolio. The code is easy to read and update.",
-    websiteURL: "https://samueldeveloper.com/",
-    repositoryURL: "https://github.com/samsoftwaredev/portfolio",
-    objective: "To show case my work, awards and skills.",
-    languages:
-      "Next.js, React, TypeScript, JavaScript, TypeScript, CSS, HTML, Git, GitHub",
   },
   {
     image: doit4jesus,
@@ -182,8 +181,10 @@ export const PROJECTS = [
     imageAlt: "Website",
     title: "Giphy Clone",
     description:
-      "GIPHY is a search engine that allows users to search for and share animated GIF files.",
+      "GIPHY is a search engine that allows users to search for and share animated GIF files. This app allows the user to search for GIFs in an infinite scroll. Although it might seem like a simple project the implementation can be complex for the average developer. ",
     repositoryURL: "https://github.com/samsoftwaredev/giphy-clone",
-    languages: "React, JavaScript, CSS, HTML",
+    objective:
+      "To test my knowledge of react and implementation of a third-party API.",
+    languages: "React, JavaScript, CSS, HTML, and GIPHY API.",
   },
 ];
