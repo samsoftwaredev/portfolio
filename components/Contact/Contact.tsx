@@ -17,11 +17,7 @@ const Contact = () => {
       bgColor={colors.grey[900]}
     >
       <Element name="contact">
-        <h2 className={css(styles.title, "primaryText")}>
-          <small className="subPrimaryText">Before you go...</small>
-          Let&apos;s Connect
-        </h2>
-
+        <h2 className={css(styles.title, "primaryText")}>Let&apos;s Connect</h2>
         <Box className={styles.formContainer}>
           <iframe className={styles.googleForm} src={googleFormURL}>
             Loading…

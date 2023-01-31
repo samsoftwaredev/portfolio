@@ -1,21 +1,14 @@
-import { useEffect, useState } from "react";
-import { StaticImageData } from "next/image";
 import { scroller } from "react-scroll";
 import { Email } from "@mui/icons-material";
 import { Button, Typography, Box, colors } from "@mui/material";
-import { Section } from "@/components";
-import { programming, matrix } from "@/public/backgrounds";
+import { Section, SocialMedia } from "@/components";
+import { programming } from "@/public/backgrounds";
 import { OWNER } from "@/constants/variables/owner";
 import { css } from "@/utils";
 import styles from "./hero.module.scss";
 
-const bgs = [programming, matrix];
-const min = 0;
-const max = bgs.length - 1;
-
 const Hero = () => {
   const currentYear = new Date().getFullYear();
-  const [bgImage, setBgImage]: [StaticImageData, Function] = useState(bgs[0]);
 
   const yearsOfExp = () => currentYear - OWNER.careerStartedYear;
 
@@ -27,19 +20,9 @@ const Hero = () => {
     });
   };
 
-  useEffect(() => {
-    const getRandomImage = (): number =>
-      Math.round(Math.random() * (max - min) + min);
-    const interval = setInterval(() => {
-      const bg = bgs[getRandomImage()];
-      setBgImage(bg);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <Section
-      bgImage={bgImage}
+      bgImage={programming}
       imageAlt="A programmer from heaven"
       isBottomShadowEnabled
       isOverlay
@@ -69,6 +52,7 @@ const Hero = () => {
             >
               Contact Me
             </Button>
+            <SocialMedia />
           </Box>
         </Box>
       </Box>

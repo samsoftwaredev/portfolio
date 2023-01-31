@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import Image from "next/image";
-import { SocialMedia, Section } from "@/components";
+import { Section, Skills } from "@/components";
 import { Typography, Box, colors } from "@mui/material";
 import { OWNER } from "@/constants/variables/owner";
 import styles from "./about.module.scss";
@@ -8,7 +8,12 @@ import { css } from "@/utils";
 
 const About = () => {
   return (
-    <Section topNav isTopShadowEnabled bgColor={colors.pink[900]}>
+    <Section
+      topNav
+      isTopShadowEnabled
+      isBottomShadowEnabled
+      bgColor={colors.pink[900]}
+    >
       <Element name="about">
         <Box className={styles.container}>
           <h3 className={css(styles.title, "primaryText")}>
@@ -31,9 +36,9 @@ const About = () => {
             className={css(styles.body, "secondaryText")}
           >
             {OWNER.bio}
-            <SocialMedia />
           </Typography>
         </Box>
+        <Skills />
       </Element>
     </Section>
   );

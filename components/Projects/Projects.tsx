@@ -7,16 +7,18 @@ import styles from "./projects.module.scss";
 
 const Projects = () => {
   return (
-    <Section centered isTopShadowEnabled bgColor={colors.pink[900]}>
+    <Section
+      centered
+      isTopShadowEnabled
+      isBottomShadowEnabled
+      bgColor={colors.pink[900]}
+    >
       <Typography
         color="white"
         variant="h3"
         gutterBottom
         className={css("primaryText", styles.title)}
       >
-        <small className={css(styles.subTitle, "subPrimaryText")}>
-          I&apos;m constantly improving...
-        </small>
         My Projects
       </Typography>
       <Element name="projects">

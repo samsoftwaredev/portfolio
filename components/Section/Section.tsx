@@ -26,12 +26,17 @@ const Section = ({
   bgColor,
   centered = false,
 }: Props) => {
-  const topShadow = isTopShadowEnabled ? styles.topShadow : "";
-  const bottomShadow = isBottomShadowEnabled ? styles.bottomShadow : "";
+  const bothShadows =
+    isBottomShadowEnabled && isTopShadowEnabled ? styles.bottomTopShadow : "";
+  const topShadow = !bothShadows && isTopShadowEnabled ? styles.topShadow : "";
+  const bottomShadow =
+    !bothShadows && isBottomShadowEnabled ? styles.bottomShadow : "";
   const topPadding = topNav ? styles.topPadding : "";
   const isCentered = centered ? styles.centered : "";
   return (
-    <div className={css(styles.container, topShadow, bottomShadow)}>
+    <div
+      className={css(styles.container, topShadow, bottomShadow, bothShadows)}
+    >
       {bgColor && (
         <div
           className={styles.backgroundColor}
@@ -53,11 +58,7 @@ const Section = ({
           />
         </div>
       )}
-      <div
-        className={[styles.componentContainer, topPadding, isCentered].join(
-          " "
-        )}
-      >
+      <div className={css(styles.componentContainer, topPadding, isCentered)}>
         {children}
       </div>
     </div>

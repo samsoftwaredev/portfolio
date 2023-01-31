@@ -14,10 +14,7 @@ const Awards = () => {
         gutterBottom
         className={css("primaryText", styles.title)}
       >
-        <small className={css(styles.subTitle, "subPrimaryText")}>
-          Things I have achieved
-        </small>
-        Awards / News
+        Awards & News
       </Typography>
       <Element name="awards" className={css(styles.subTitle, "subPrimaryText")}>
         <Box className={styles.container}>
@@ -47,11 +44,9 @@ const Awards = () => {
             THE PIONEER NEWSPAPER (2019)
           </Typography>
           <Typography className={styles.content}>
-            East Bay University newsaper coverage. Omar Ruiz Geronimo recognized
-            that there was a problem when he failed to collect payment a few
-            times as an architectural designer. “I feel like it’s something
-            freelancers don&amps;t like to talk about because it is kind of
-            embarrassing,” said Omar. Samuel...
+            East Bay University newsaper coverage. Samuel Ruiz Geronimo, an
+            undergraduate senior majoring in Computer Science at California
+            State University, East Bay launched AlliesPro on April 15.
             <Button href="https://thepioneeronline.com/38597/campus/csueb-student-develops-gig-finder/">
               Read more...
             </Button>
