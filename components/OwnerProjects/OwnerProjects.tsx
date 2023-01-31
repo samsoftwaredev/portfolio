@@ -49,24 +49,16 @@ const OwnerProjects = ({ projects }: Props) => {
             >
               {p.title}
             </Typography>
-            <Typography variant="body2" color="text.secondary" component="div">
+            <Typography variant="body1" component="div">
               <b>Description:</b> {p.description}
             </Typography>
             {p.objective && (
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                component="div"
-              >
+              <Typography variant="body1" component="div">
                 <b>Objective:</b> {p.objective}
               </Typography>
             )}
             {p.languages && (
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                component="div"
-              >
+              <Typography variant="body1" component="div">
                 <b>Language:</b> {p.languages}
               </Typography>
             )}
@@ -75,12 +67,20 @@ const OwnerProjects = ({ projects }: Props) => {
             sx={{ display: "flex", justifyContent: "space-between" }}
           >
             {p.repositoryURL && (
-              <Button startIcon={<GitHub />} href={p.repositoryURL}>
+              <Button
+                variant="outlined"
+                startIcon={<GitHub />}
+                href={p.repositoryURL}
+              >
                 Repository
               </Button>
             )}
             {p.websiteURL && (
-              <Button startIcon={<RemoveRedEye />} href={p.websiteURL}>
+              <Button
+                startIcon={<RemoveRedEye />}
+                href={p.websiteURL}
+                variant="contained"
+              >
                 View
               </Button>
             )}

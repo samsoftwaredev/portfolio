@@ -4,28 +4,27 @@ import { OwnerSkills } from "@/components";
 import { SKILL1, SKILL2, SKILL3 } from "@/constants/variables/owner";
 import styles from "./skills.module.scss";
 
+const allSkills = {
+  SKILL2,
+  SKILL3,
+  SKILL1,
+};
+
 const Skills = () => {
   return (
     <Element name="skills">
       <Box className={styles.skillsList}>
-        <Box p={2} minWidth={300}>
-          <Typography variant="h5" gutterBottom className="secondaryText">
-            {SKILL2.title}
-          </Typography>
-          <OwnerSkills skills={SKILL2.list} />
-        </Box>
-        <Box p={2} minWidth={300}>
-          <Typography variant="h5" gutterBottom className="secondaryText">
-            {SKILL3.title}
-          </Typography>
-          <OwnerSkills skills={SKILL3.list} />
-        </Box>
-        <Box p={2} minWidth={300}>
-          <Typography variant="h5" gutterBottom className="secondaryText">
-            {SKILL1.title}
-          </Typography>
-          <OwnerSkills skills={SKILL1.list} />
-        </Box>
+        {Object.keys(allSkills).map((key) => {
+          const skill = allSkills[key as keyof typeof allSkills];
+          return (
+            <Box key={key} p={2} minWidth={300}>
+              <Typography variant="h5" gutterBottom className="secondaryText">
+                {skill.title}
+              </Typography>
+              <OwnerSkills skills={skill.list} />
+            </Box>
+          );
+        })}
       </Box>
     </Element>
   );
