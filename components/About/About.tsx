@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import Image from "next/image";
-import { Section, Skills } from "@/components";
+import { ResumeInquiry, Section, Skills } from "@/components";
 import { Typography, Box, colors } from "@mui/material";
 import { OWNER } from "@/constants/variables/owner";
 import styles from "./about.module.scss";

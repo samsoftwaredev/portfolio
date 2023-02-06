@@ -30,7 +30,9 @@ const Hero = () => {
     >
       <Box className={styles.container}>
         <h1 className={css("primaryText", styles.title)}>
-          <small className="subPrimaryText">Hi I&apos;m {OWNER.fullName}</small>
+          <small className="subPrimaryText">
+            {OWNER.firstName}&apos;s Portfolio
+          </small>
           {OWNER.job}
           <small className="subPrimaryText">
             + {yearsOfExp()} years experience
@@ -56,7 +58,10 @@ const Hero = () => {
           </Box>
         </Box>
       </Box>
-      <div onClick={() => scrollToElm("about")} className={styles.scrollDown} />
+      <div
+        onClick={() => scrollToElm("projects")}
+        className={styles.scrollDown}
+      />
     </Section>
   );
 };

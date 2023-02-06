@@ -7,12 +7,14 @@ import {
   About,
   Contact,
   Awards,
+  ResumeInquiry,
 } from "@/components";
 
 const Home: NextPage = () => {
   return (
     <MainLayout>
       <Hero />
+      <ResumeInquiry />
       <Projects />
       <Awards />
       <About />

@@ -17,10 +17,11 @@ export const OWNER = {
   picture: ownerPicture,
   careerStartedYear: 2016,
   description:
-    "Front-End Developer with proven experience at AlliesPro and Bond. Passionate about learning and development with a desire to apply skills on a larger development team. Eager to tackle more complex problems and continue to find ways to enhance user experiences.",
+    "Front-End Developer with proven experience at multiple startups. Passionate about coding, learning, and development with a desire to apply skills to larger and complex problems. Eager to improve users' experiences through the use of enhanced UI and UX design.",
   bio: `Front-End Developer with years of proven work, and meaningful contributions.
-  With my results-driven mentality, I transformed my team at Bond.tech by seeking, learning, and teaching new, efficient technologies to make aggressive deadlines consistently achievable. Passionate about going the extra mile to ensure that the customer is unquestionably satisfied with the project or service provided.
-   With an emphasis on throughput and stability, I look forward to working collaboratively as well as spearheading independent projects.
+  With my results-driven mentality, I transformed my team at Bond.tech by seeking, learning, and teaching new, efficient technologies to make aggressive
+   deadlines consistently achievable. Passionate about going the extra mile to ensure that the customer is satisfied with the project or service provided.
+   With an emphasis on throughput and stability, I look forward to working collaboratively on larger projects.
    I graduated with a B.S. in Computer Science from California State University and during that time I built my own startup called AlliesPro.
    AlliesPro is the world's first Pay Per File System where savvy solo professionals and freelancers get paid on time!
    If you have any questions, feel free to contact me.
@@ -81,12 +82,14 @@ export const SKILL3 = {
   ],
 };
 
+export const linkedInProfile = {
+  name: "LinkedIn",
+  icon: LinkedIn,
+  url: "https://www.linkedin.com/in/samuel-ruiz-839895142/",
+};
+
 export const SOCIAL_MEDIA = [
-  {
-    name: "LinkedIn",
-    icon: LinkedIn,
-    url: "https://www.linkedin.com/in/samuel-ruiz-839895142/",
-  },
+  linkedInProfile,
   {
     name: "GitHub",
     icon: GitHub,
@@ -112,7 +115,7 @@ export const PROJECTS = [
     imageAlt: "Cloud Kitchen Clone App Main Page",
     title: "Cloud Kitties",
     description:
-      "Cloud Kitties handles huge amounts of data in an ever-growing table. The table component uses React Hooks to simplify the component's interface. The algorithm used in this app was influenced by an article published by Ying Jiang. This app is a clone of Cloud Kitchen, which is a ghost kitchen and virtual restaurant application.",
+      "Cloud Kitties is a clone of DoorDash's admin panel, a food-sharing service. It handles huge amounts of data in an ever-growing table without diminishing the UX. The table component uses React Hooks to simplify the component's interface. The algorithm used in this app was influenced by an article published by Ying Jiang.",
     websiteURL: "https://cloudkitchen.vercel.app/",
     repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
     objective:
@@ -125,12 +128,12 @@ export const PROJECTS = [
     imageAlt: "Website",
     title: "Samuel's Portfolio",
     description:
-      "Samuel's Portfolio is a website to showcase my work, projects and skills. In the future I will add a blog section. You can clone this repo and build your own portfolio. The code is easy to read and update.",
+      "Samuel's Portfolio is a website to showcase my work, projects and skills. You can clone this repo and build your own portfolio. The code is easy to read and update.",
     websiteURL: "https://samueldeveloper.com/",
     repositoryURL: "https://github.com/samsoftwaredev/portfolio",
     objective: "To show case my work, awards and skills.",
     languages:
-      "Next.js, React, TypeScript, JavaScript, TypeScript, CSS, HTML, Git, GitHub, Google Forms.",
+      "Next.js, React, TypeScript, JavaScript, Material UI, TypeScript, CSS, HTML, Git, GitHub, Google Forms.",
   },
   {
     image: finmily,

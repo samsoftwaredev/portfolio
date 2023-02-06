@@ -77,6 +77,7 @@ const OwnerProjects = ({ projects }: Props) => {
             )}
             {p.websiteURL && (
               <Button
+                target="_blank"
                 startIcon={<RemoveRedEye />}
                 href={p.websiteURL}
                 variant="contained"

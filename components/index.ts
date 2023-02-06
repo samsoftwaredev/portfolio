@@ -13,4 +13,5 @@ export { default as Contact } from "./Contact";
 export { default as ContactForm } from "./ContactForm";
 export { default as Logo } from "./Logo";
 export { default as Awards } from "./Awards";
+export { default as ResumeInquiry } from "./ResumeInquiry";
 export * from "./Layout";
