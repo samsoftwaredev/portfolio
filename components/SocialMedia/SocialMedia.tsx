@@ -8,7 +8,12 @@ const SocialMedia = () => {
       <ul className={styles.linkList}>
         {SOCIAL_MEDIA.map(({ name, icon, url }) => (
           <li key={name}>
-            <Link className={styles.link} href={url} color={colors.grey[200]}>
+            <Link
+              target={`_${name}`}
+              className={styles.link}
+              href={url}
+              color={colors.grey[200]}
+            >
               <Icon component={icon} fontSize="large" />
             </Link>
           </li>
