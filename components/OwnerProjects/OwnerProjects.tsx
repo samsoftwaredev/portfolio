@@ -71,13 +71,14 @@ const OwnerProjects = ({ projects }: Props) => {
                 variant="outlined"
                 startIcon={<GitHub />}
                 href={p.repositoryURL}
+                target="_github"
               >
                 Repository
               </Button>
             )}
             {p.websiteURL && (
               <Button
-                target="_blank"
+                target="_app"
                 startIcon={<RemoveRedEye />}
                 href={p.websiteURL}
                 variant="contained"
