@@ -18,7 +18,7 @@ const ResumeInquiry = () => {
       <Typography
         my={15}
         variant="h3"
-        className={css(styles.title, "subPrimaryText")}
+        className={css("subPrimaryText", styles.title)}
       >
         For Resume Inquiry&nbsp;
         <a href="#contact-me" onClick={() => scrollToElm("contact")}>
