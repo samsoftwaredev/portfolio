@@ -25,7 +25,11 @@ const ResumeInquiry = () => {
           Contact me
         </a>
         &nbsp;or&nbsp;
-        <a rel="noreferrer" href={linkedInProfile.url} target="_blank">
+        <a
+          rel="noreferrer"
+          href={linkedInProfile.url}
+          target={`_${linkedInProfile.name}`}
+        >
           Follow me
         </a>
       </Typography>
