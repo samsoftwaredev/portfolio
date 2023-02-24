@@ -15,11 +15,7 @@ const ResumeInquiry = () => {
   };
   return (
     <Section bgColor={colors.grey[900]}>
-      <Typography
-        my={15}
-        variant="h3"
-        className={css("subPrimaryText", styles.title)}
-      >
+      <Typography my={10} variant="h3" className={css(styles.title)}>
         For Resume Inquiry&nbsp;
         <a href="#contact-me" onClick={() => scrollToElm("contact")}>
           Contact me
