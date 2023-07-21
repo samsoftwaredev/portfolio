@@ -27,6 +27,7 @@ const Hero = () => {
       isBottomShadowEnabled
       isOverlay
       bgColor={colors.grey[900]}
+      addAnimation={false}
     >
       <Box className={styles.container}>
         <h1 className={css("primaryText", styles.title)}>

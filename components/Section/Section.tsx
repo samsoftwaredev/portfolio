@@ -14,6 +14,7 @@ interface Props {
   bgColor?: string;
   centered?: boolean;
   className?: string;
+  addAnimation?: boolean;
 }
 
 const Section = ({
@@ -26,6 +27,7 @@ const Section = ({
   topNav = false,
   bgColor,
   centered = false,
+  addAnimation = true,
 }: Props) => {
   const ref = useRef(null);
 
@@ -38,7 +40,7 @@ const Section = ({
   const isCentered = centered ? styles.centered : "";
 
   useEffect(() => {
-    if (ref.current) {
+    if (ref.current && addAnimation === true) {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -81,7 +83,7 @@ const Section = ({
           styles.componentContainer,
           topPadding,
           isCentered,
-          styles.hidden
+          addAnimation === true ? styles.hidden : ""
         )}
       >
         {children}
