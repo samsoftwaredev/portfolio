@@ -51,6 +51,7 @@ const Hero = () => {
               onClick={() => scrollToElm("contact")}
               variant="contained"
               startIcon={<Email />}
+              color="error"
             >
               Contact Me
             </Button>

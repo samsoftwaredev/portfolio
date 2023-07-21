@@ -38,7 +38,7 @@ export const SKILL1 = {
       name: "Creative",
     },
     {
-      name: "UI and UX Designer",
+      name: "UI & UX Designer",
     },
     {
       name: "System Architecture Designer",
@@ -68,7 +68,7 @@ export const SKILL3 = {
   title: "Back-End Languages",
   list: [
     {
-      name: "Node.js with Express",
+      name: "Node.js & Express",
     },
     {
       name: "No SQL - Firebase",

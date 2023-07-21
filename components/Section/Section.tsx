@@ -1,5 +1,5 @@
 import styles from "./section.module.scss";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useRef } from "react";
 import Image, { StaticImageData } from "next/image";
 import { css } from "../../utils";
 
@@ -13,6 +13,7 @@ interface Props {
   topNav?: boolean;
   bgColor?: string;
   centered?: boolean;
+  className?: string;
 }
 
 const Section = ({
@@ -26,6 +27,8 @@ const Section = ({
   bgColor,
   centered = false,
 }: Props) => {
+  const ref = useRef(null);
+
   const bothShadows =
     isBottomShadowEnabled && isTopShadowEnabled ? styles.bottomTopShadow : "";
   const topShadow = !bothShadows && isTopShadowEnabled ? styles.topShadow : "";
@@ -33,6 +36,20 @@ const Section = ({
     !bothShadows && isBottomShadowEnabled ? styles.bottomShadow : "";
   const topPadding = topNav ? styles.topPadding : "";
   const isCentered = centered ? styles.centered : "";
+
+  useEffect(() => {
+    if (ref.current) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.show);
+          }
+        });
+      });
+      observer.observe(ref.current);
+    }
+  }, [ref]);
+
   return (
     <div
       className={css(styles.container, topShadow, bottomShadow, bothShadows)}
@@ -58,7 +75,15 @@ const Section = ({
           />
         </div>
       )}
-      <div className={css(styles.componentContainer, topPadding, isCentered)}>
+      <div
+        ref={ref}
+        className={css(
+          styles.componentContainer,
+          topPadding,
+          isCentered,
+          styles.hidden
+        )}
+      >
         {children}
       </div>
     </div>

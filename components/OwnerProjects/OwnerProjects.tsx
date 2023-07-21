@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { GitHub, RemoveRedEye } from "@mui/icons-material";
 import styles from "./ownerProjects.module.scss";
+import { lightGreen } from "@mui/material/colors";
 
 interface Props {
   projects: {
@@ -72,6 +73,7 @@ const OwnerProjects = ({ projects }: Props) => {
                 startIcon={<GitHub />}
                 href={p.repositoryURL}
                 target="_github"
+                color="warning"
               >
                 Repository
               </Button>
@@ -82,6 +84,7 @@ const OwnerProjects = ({ projects }: Props) => {
                 startIcon={<RemoveRedEye />}
                 href={p.websiteURL}
                 variant="contained"
+                color="warning"
               >
                 View App
               </Button>
