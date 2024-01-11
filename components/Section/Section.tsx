@@ -69,7 +69,7 @@ const Section = ({
           {isOverlay && <div className={styles.overlay} />}
           <Image
             className={styles.image}
-            alt={imageAlt}
+            alt={bgImage ? imageAlt : ""}
             src={bgImage}
             layout="fill"
             objectFit="cover"
