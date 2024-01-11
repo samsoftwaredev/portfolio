@@ -111,6 +111,19 @@ export const PROJECTS = [
     repositoryURL: "",
   },
   {
+    image: doit4jesus,
+    imageAlt: "Rosary App Main Page",
+    title: "DoIt4Jesus",
+    description:
+      "DoIt4Jesus app helps Catholics pray the rosary together. This is a social app that shows every user that is currently logged in. Users can listen to the rosary, change settings and submit their prayers.",
+    websiteURL: "https://doit4jesus.com",
+    repositoryURL: "https://github.com/samsoftwaredev/doit4jesus-app",
+    objective:
+      "Allow users to stay online and send messages while listening to audio at the same time.",
+    languages:
+      "Next.js, JavaScript, TypeScript, React, CSS, Styled-Components, HTML, Git, Github  and other third-party APIs.",
+  },
+  {
     image: cloudkitties,
     imageAlt: "Cloud Kitchen Clone App Main Page",
     title: "Cloud Kitties",
@@ -146,19 +159,6 @@ export const PROJECTS = [
     objective: "To help families manage their finance in on single place.",
     languages:
       "Firebase, Next.js, React, JavaScript, TypeScript, CSS, HTML, Node.js, Express.js, Git  and other third-party APIs.",
-  },
-  {
-    image: doit4jesus,
-    imageAlt: "Rosary App Main Page",
-    title: "DoIt4Jesus",
-    description:
-      "DoIt4Jesus app helps Catholics pray the rosary together. This is a social app that shows every user that is currently logged in. Users can listen to the rosary, change settings and submit their prayers.",
-    websiteURL: "https://doit4jesus.com/app",
-    repositoryURL: "https://github.com/samsoftwaredev/doit4jesus-app",
-    objective:
-      "Allow users to stay online and send messages while listening to audio at the same time.",
-    languages:
-      "Next.js, JavaScript, TypeScript, React, CSS, Styled-Components, HTML, Git, Github  and other third-party APIs.",
   },
   // {
   //   image: garden,

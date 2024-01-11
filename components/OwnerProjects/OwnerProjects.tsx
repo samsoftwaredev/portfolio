@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import { GitHub, RemoveRedEye } from "@mui/icons-material";
 import styles from "./ownerProjects.module.scss";
-import { lightGreen } from "@mui/material/colors";
 
 interface Props {
   projects: {
