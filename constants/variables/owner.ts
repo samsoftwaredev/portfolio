@@ -148,18 +148,18 @@ export const PROJECTS = [
     languages:
       "Next.js, React, TypeScript, JavaScript, Material UI, TypeScript, CSS, HTML, Git, GitHub, Google Forms.",
   },
-  {
-    image: finmily,
-    imageAlt: "Website",
-    title: "Finmily",
-    description:
-      "Finmily is a web app that helps families track their expenses. Users are able to share their bank account information with their family members as well as send them money. Finance for the entire family.",
-    websiteURL: "https://finmily.com/",
-    repositoryURL: "https://github.com/samsoftwaredev/expense-tracker-frontend",
-    objective: "To help families manage their finance in on single place.",
-    languages:
-      "Firebase, Next.js, React, JavaScript, TypeScript, CSS, HTML, Node.js, Express.js, Git  and other third-party APIs.",
-  },
+  // {
+  //   image: finmily,
+  //   imageAlt: "Website",
+  //   title: "Finmily",
+  //   description:
+  //     "Finmily is a web app that helps families track their expenses. Users are able to share their bank account information with their family members as well as send them money. Finance for the entire family.",
+  //   websiteURL: "https://finmily.com/",
+  //   repositoryURL: "https://github.com/samsoftwaredev/expense-tracker-frontend",
+  //   objective: "To help families manage their finance in on single place.",
+  //   languages:
+  //     "Firebase, Next.js, React, JavaScript, TypeScript, CSS, HTML, Node.js, Express.js, Git  and other third-party APIs.",
+  // },
   // {
   //   image: garden,
   //   imageAlt: "Website",
@@ -179,15 +179,15 @@ export const PROJECTS = [
   //   objective: "To build a game with the characters of a popular comic book.",
   //   languages: "Vanilla JavaScript, CSS, HTML",
   // },
-  {
-    image: giphy,
-    imageAlt: "Website",
-    title: "Giphy Clone",
-    description:
-      "GIPHY is a search engine that allows users to search for and share animated GIF files. This app allows the user to search for GIFs in an infinite scroll. Although it might seem like a simple project the implementation can be complex for the average developer. ",
-    repositoryURL: "https://github.com/samsoftwaredev/giphy-clone",
-    objective:
-      "To test my knowledge of react and implementation of a third-party API.",
-    languages: "React, JavaScript, CSS, HTML, and GIPHY API.",
-  },
+  // {
+  //   image: giphy,
+  //   imageAlt: "Website",
+  //   title: "Giphy Clone",
+  //   description:
+  //     "GIPHY is a search engine that allows users to search for and share animated GIF files. This app allows the user to search for GIFs in an infinite scroll. Although it might seem like a simple project the implementation can be complex for the average developer. ",
+  //   repositoryURL: "https://github.com/samsoftwaredev/giphy-clone",
+  //   objective:
+  //     "To test my knowledge of react and implementation of a third-party API.",
+  //   languages: "React, JavaScript, CSS, HTML, and GIPHY API.",
+  // },
 ];
