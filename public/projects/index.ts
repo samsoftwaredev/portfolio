@@ -5,4 +5,4 @@ export { default as game } from "./game.png";
 export { default as alliespro } from "./alliespro.jpeg";
 export { default as finmily } from "./finmily.png";
 export { default as cloudkitties } from "./cloudkitties.png";
-export { default as doit4jesus } from "./doIt4Jesus.png";
+export { default as doit4jesus } from "./doit4jesus.png";
