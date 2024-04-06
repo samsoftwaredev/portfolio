@@ -123,31 +123,31 @@ export const PROJECTS = [
     languages:
       "Next.js, JavaScript, TypeScript, React, CSS, Styled-Components, HTML, Git, Github  and other third-party APIs.",
   },
-  {
-    image: cloudkitties,
-    imageAlt: "Cloud Kitchen Clone App Main Page",
-    title: "Cloud Kitties",
-    description:
-      "Cloud Kitties is a clone of DoorDash's admin panel, a food-sharing service. It handles huge amounts of data in an ever-growing table without diminishing the UX. The table component uses React Hooks to simplify the component's interface. The algorithm used in this app was influenced by an article published by Ying Jiang.",
-    websiteURL: "https://cloudkitchen.vercel.app/",
-    repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
-    objective:
-      "To have the web application run smoothly while receiving 10k orders of food and display it on a table.",
-    languages:
-      "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github, socket.io",
-  },
-  {
-    image: portfolio,
-    imageAlt: "Website",
-    title: "Samuel's Portfolio",
-    description:
-      "Samuel's Portfolio is a website to showcase my work, projects and skills. You can clone this repo and build your own portfolio. The code is easy to read and update.",
-    websiteURL: "https://samueldeveloper.com/",
-    repositoryURL: "https://github.com/samsoftwaredev/portfolio",
-    objective: "To show case my work, awards and skills.",
-    languages:
-      "Next.js, React, TypeScript, JavaScript, Material UI, TypeScript, CSS, HTML, Git, GitHub, Google Forms.",
-  },
+  // {
+  //   image: cloudkitties,
+  //   imageAlt: "Cloud Kitchen Clone App Main Page",
+  //   title: "Cloud Kitties",
+  //   description:
+  //     "Cloud Kitties is a clone of DoorDash's admin panel, a food-sharing service. It handles huge amounts of data in an ever-growing table without diminishing the UX. The table component uses React Hooks to simplify the component's interface. The algorithm used in this app was influenced by an article published by Ying Jiang.",
+  //   websiteURL: "https://cloudkitchen.vercel.app/",
+  //   repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
+  //   objective:
+  //     "To have the web application run smoothly while receiving 10k orders of food and display it on a table.",
+  //   languages:
+  //     "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github, socket.io",
+  // },
+  // {
+  //   image: portfolio,
+  //   imageAlt: "Website",
+  //   title: "Samuel's Portfolio",
+  //   description:
+  //     "Samuel's Portfolio is a website to showcase my work, projects and skills. You can clone this repo and build your own portfolio. The code is easy to read and update.",
+  //   websiteURL: "https://samueldeveloper.com/",
+  //   repositoryURL: "https://github.com/samsoftwaredev/portfolio",
+  //   objective: "To show case my work, awards and skills.",
+  //   languages:
+  //     "Next.js, React, TypeScript, JavaScript, Material UI, TypeScript, CSS, HTML, Git, GitHub, Google Forms.",
+  // },
   // {
   //   image: finmily,
   //   imageAlt: "Website",
