@@ -16,7 +16,7 @@ export const OWNER = {
   job: "Front-End Developer",
   picture: ownerPicture,
   careerStartedYear: 2016,
-  description: `  I'm Senior React Front-End Developer with a passion for building pixel-perfect, high-performing web applications.
+  description: `  I'm a Senior React Front-End Developer with a passion for building pixel-perfect, high-performing web applications.
   I focus on best practices, clean code, UX/UI principles, SEO optimization, and scalable architecture. Expert in React, JavaScript, HTML, and CSS.
   I have work experience in FinTech, building startups, and developing web applications for small to medium-sized businesses.`,
   bio: `I bring a strong technical foundation, a collaborative spirit, and a commitment to exceeding client expectations.
