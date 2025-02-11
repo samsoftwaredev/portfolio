@@ -12,7 +12,7 @@ const MainLayout = ({ children }: Props) => {
       <Meta />
       <Navbar />
       <main className={styles.main}>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
