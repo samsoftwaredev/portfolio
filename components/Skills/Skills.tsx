@@ -12,7 +12,12 @@ const Skills = () => {
       <Box className={styles.skillsList}>
         {allSkills.map(({ title, list }) => (
           <Box key={title} p={2} minWidth={300}>
-            <Typography variant="h5" gutterBottom className="secondaryText">
+            <Typography
+              fontWeight={900}
+              variant="h5"
+              gutterBottom
+              className="secondaryText"
+            >
               {title}
             </Typography>
             <OwnerSkills skills={list} />

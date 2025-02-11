@@ -7,6 +7,7 @@
   margin: 60px 20px;
   @media (min-width: $mobile) {
     justify-content: flex-end;
+    margin: 150px 20px;
   }
   @media (min-width: $desktop) {
     justify-content: space-between;
@@ -35,11 +36,12 @@
     width: 350px;
   }
   @media (min-width: $xl) {
-    width: 550px;
+    width: 750px;
   }
 }
 
 .biography {
+  white-space: pre-wrap;
   font-size: 1.2em;
   @media (min-width: $desktop) {
     font-size: 1.5em;

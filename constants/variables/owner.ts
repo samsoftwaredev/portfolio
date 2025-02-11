@@ -16,16 +16,17 @@ export const OWNER = {
   job: "Front-End Developer",
   picture: ownerPicture,
   careerStartedYear: 2016,
-  description:
-    "Front-End Developer with proven experience at multiple startups. Passionate about coding, learning, and development with a desire to apply skills to larger and complex problems. Eager to improve users' experiences through the use of enhanced UI and UX design.",
-  bio: `Front-End Developer with years of proven work, and meaningful contributions.
-  With my results-driven mentality, I transformed my team at Bond.tech by seeking, learning, and teaching new, efficient technologies to make aggressive
-   deadlines consistently achievable. Passionate about going the extra mile to ensure that the customer is satisfied with the project or service provided.
-   With an emphasis on throughput and stability, I look forward to working collaboratively on larger projects.
-   I graduated with a B.S. in Computer Science from California State University and during that time I built my own startup called AlliesPro.
-   AlliesPro is the world's first Pay Per File System where savvy solo professionals and freelancers get paid on time!
-   If you have any questions, feel free to contact me.
-    `,
+  description: `  I'm Senior React Front-End Developer with a passion for building pixel-perfect, high-performing web applications.
+  I focus on best practices, clean code, UX/UI principles, SEO optimization, and scalable architecture. Expert in React, JavaScript, HTML, and CSS.
+  I have work experience in FinTech, building startups, and developing web applications for small to medium-sized businesses.`,
+  bio: `I bring a strong technical foundation, a collaborative spirit, and a commitment to exceeding client expectations.
+
+- Proven Results: Consistently delivered high-quality work, meeting and exceeding project deadlines.
+- Technical Expertise: Expert in React and JavaScript.
+- Full-Stack Development: Experience with Node.js, Express, Supabase, Firebase, APIs and Postgres.
+- Innovation & Learning: Continuously seeking new technologies and approaches to improve performance and efficiency.
+- Test Driven Development: Strong understanding of TDD and BDD.
+- Entrepreneurial Background: Founder of AlliesPro and Bond.tech firsts employee. (B.S. Computer Science, California State University) `,
 };
 
 export const SKILL1 = {
@@ -50,16 +51,16 @@ export const SKILL2 = {
   title: "Front-End Languages",
   list: [
     {
-      name: "React",
+      name: "React, JavaScript & TypeScript",
     },
     {
-      name: "JavaScript & TypeScript",
+      name: "Material UI & Styled-Components",
     },
     {
-      name: "CSS & HTML",
+      name: "CSS, SCSS & HTML",
     },
     {
-      name: "GraphQL",
+      name: "Jest & React Testing Library",
     },
   ],
 };
@@ -71,10 +72,10 @@ export const SKILL3 = {
       name: "Node.js & Express",
     },
     {
-      name: "No SQL - Firebase",
+      name: "Restful APIs & GraphQL",
     },
     {
-      name: "SQL - Postgres",
+      name: "SQL & NoSQL Databases",
     },
     {
       name: "Terminal/Command Prompt",
@@ -108,7 +109,7 @@ export const PROJECTS = [
       "Send invoices that hold the client's money for a period of time. After any given date or goal has been reached the money will be deposited into the user's bank account.",
     languages:
       "HTML, CSS, JavaScript, Vue, Nuxt.js, Node.js, Firebase and other third-party APIs.",
-    repositoryURL: "",
+    videoURL: "https://www.youtube.com/watch?v=ofWu0Mogv2Q&t=16s",
   },
   {
     image: doit4jesus,
@@ -123,31 +124,31 @@ export const PROJECTS = [
     languages:
       "Next.js, JavaScript, TypeScript, React, CSS, Styled-Components, HTML, Git, Github  and other third-party APIs.",
   },
-  // {
-  //   image: cloudkitties,
-  //   imageAlt: "Cloud Kitchen Clone App Main Page",
-  //   title: "Cloud Kitties",
-  //   description:
-  //     "Cloud Kitties is a clone of DoorDash's admin panel, a food-sharing service. It handles huge amounts of data in an ever-growing table without diminishing the UX. The table component uses React Hooks to simplify the component's interface. The algorithm used in this app was influenced by an article published by Ying Jiang.",
-  //   websiteURL: "https://cloudkitchen.vercel.app/",
-  //   repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
-  //   objective:
-  //     "To have the web application run smoothly while receiving 10k orders of food and display it on a table.",
-  //   languages:
-  //     "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github, socket.io",
-  // },
-  // {
-  //   image: portfolio,
-  //   imageAlt: "Website",
-  //   title: "Samuel's Portfolio",
-  //   description:
-  //     "Samuel's Portfolio is a website to showcase my work, projects and skills. You can clone this repo and build your own portfolio. The code is easy to read and update.",
-  //   websiteURL: "https://samueldeveloper.com/",
-  //   repositoryURL: "https://github.com/samsoftwaredev/portfolio",
-  //   objective: "To show case my work, awards and skills.",
-  //   languages:
-  //     "Next.js, React, TypeScript, JavaScript, Material UI, TypeScript, CSS, HTML, Git, GitHub, Google Forms.",
-  // },
+  {
+    image: cloudkitties,
+    imageAlt: "Cloud Kitchen Clone App Main Page",
+    title: "Cloud Kitties",
+    description:
+      "Cloud Kitties is a clone of DoorDash's admin panel, a food-sharing service. It handles huge amounts of data in an ever-growing table without diminishing the UX. The table component uses React Hooks to simplify the component's interface. The algorithm used in this app was influenced by an article published by Ying Jiang.",
+    websiteURL: "https://cloudkitchen.vercel.app/",
+    repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
+    objective:
+      "To have the web application run smoothly while receiving 10k orders of food and display it on a table.",
+    languages:
+      "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github, socket.io",
+  },
+  {
+    image: portfolio,
+    imageAlt: "Website",
+    title: "Samuel's Portfolio",
+    description:
+      "Samuel's Portfolio is a website to showcase my work, projects and skills. You can clone this repo and build your own portfolio. The code is easy to read and update.",
+    websiteURL: "https://samueldeveloper.com/",
+    repositoryURL: "https://github.com/samsoftwaredev/portfolio",
+    objective: "To show case my work, awards and skills.",
+    languages:
+      "Next.js, React, TypeScript, JavaScript, Material UI, TypeScript, CSS, HTML, Git, GitHub, Google Forms.",
+  },
   // {
   //   image: finmily,
   //   imageAlt: "Website",

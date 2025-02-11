@@ -56,7 +56,14 @@ const Hero = () => {
             >
               Contact Me
             </Button>
-            <SocialMedia />
+            {/* <Button
+              onClick={() => scrollToElm("contact")}
+              variant="outlined"
+              startIcon={<Email />}
+              color="error"
+            >
+              Services
+            </Button> */}
           </Box>
         </Box>
       </Box>

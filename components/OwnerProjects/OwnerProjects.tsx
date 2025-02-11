@@ -18,6 +18,7 @@ interface Props {
     image?: StaticImageData;
     imageAlt: string;
     websiteURL?: string;
+    videoURL?: string;
     repositoryURL?: string;
     objective?: string;
     languages?: string;
@@ -40,7 +41,7 @@ const OwnerProjects = ({ projects }: Props) => {
               />
             </Box>
           )}
-          <CardContent>
+          <CardContent sx={{ height: { sm: "100%", lg: "350px" } }}>
             <Typography
               align="center"
               gutterBottom
@@ -64,7 +65,7 @@ const OwnerProjects = ({ projects }: Props) => {
             )}
           </CardContent>
           <CardActions
-            sx={{ display: "flex", justifyContent: "space-between" }}
+            sx={{ display: "flex", justifyContent: "space-between", pt: 2 }}
           >
             {p.repositoryURL && (
               <Button
@@ -75,6 +76,17 @@ const OwnerProjects = ({ projects }: Props) => {
                 color="warning"
               >
                 Repository
+              </Button>
+            )}
+            {p.videoURL && (
+              <Button
+                target="_app"
+                startIcon={<RemoveRedEye />}
+                href={p.videoURL}
+                variant="contained"
+                color="warning"
+              >
+                View Video
               </Button>
             )}
             {p.websiteURL && (

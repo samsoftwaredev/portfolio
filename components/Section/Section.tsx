@@ -53,7 +53,7 @@ const Section = ({
   }, [ref]);
 
   return (
-    <div
+    <section
       className={css(styles.container, topShadow, bottomShadow, bothShadows)}
     >
       {bgColor && (
@@ -69,7 +69,7 @@ const Section = ({
           {isOverlay && <div className={styles.overlay} />}
           <Image
             className={styles.image}
-            alt={bgImage ? imageAlt : ""}
+            alt={imageAlt ? imageAlt : ""}
             src={bgImage}
             layout="fill"
             objectFit="cover"
@@ -88,7 +88,7 @@ const Section = ({
       >
         {children}
       </div>
-    </div>
+    </section>
   );
 };
 

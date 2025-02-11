@@ -18,7 +18,7 @@ const About = () => {
         <Box className={styles.container}>
           <h3 className={css(styles.title, "primaryText")}>
             {OWNER.fullName}
-            <small className="subPrimaryText">Biography</small>
+            <small className="subPrimaryText">About</small>
           </h3>
           <Box px={5} className={styles.imageContainer}>
             <Image

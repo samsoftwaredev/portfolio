@@ -1,7 +1,11 @@
 .imageContainer {
   height: 350px;
   width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .container {
   display: flex;
   justify-content: center;
@@ -25,12 +29,21 @@
   }
 }
 
+.profileImage {
+  width: 220px;
+  max-height: 200px;
+}
+
 .bodyContainer {
+  white-space: pre-wrap;
   display: flex;
   justify-content: center;
   margin-top: 60px;
+  padding: 30px;
+
   @media (min-width: $sm) {
     margin-top: 20px;
+    padding: 10px;
   }
 }
 
