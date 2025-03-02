@@ -3,7 +3,7 @@ import { ownerPicture } from "../../public/owner";
 import {
   giphy,
   portfolio,
-  finmily,
+  djtipme,
   alliespro,
   cloudkitties,
   doit4jesus,
@@ -16,7 +16,7 @@ export const OWNER = {
   job: "Front-End Developer",
   picture: ownerPicture,
   careerStartedYear: 2016,
-  description: `  I'm a Senior React Front-End Developer with a passion for building pixel-perfect, high-performing web applications.
+  description: `I'm a Senior React Front-End Developer with a passion for building pixel-perfect, high-performing web applications.
   I focus on best practices, clean code, UX/UI principles, SEO optimization, and scalable architecture. Expert in React, JavaScript, HTML, and CSS.
   I have work experience in FinTech, building startups, and developing web applications for small to medium-sized businesses.`,
   bio: `I bring a strong technical foundation, a collaborative spirit, and a commitment to exceeding client expectations.
@@ -100,18 +100,6 @@ export const SOCIAL_MEDIA = [
 
 export const PROJECTS = [
   {
-    image: alliespro,
-    imageAlt: "Website Home Page",
-    title: "AlliesPro",
-    description:
-      "AlliesPro is a gig search and payment web-app that started off as a simple chat to send and receive money. However, has evolved into a payment system that allows freelancers and clients to match, collaborate, and securely make money transactions. Freelancers can apply to gigs around their area and get paid on-time.",
-    objective:
-      "Send invoices that hold the client's money for a period of time. After any given date or goal has been reached the money will be deposited into the user's bank account.",
-    languages:
-      "HTML, CSS, JavaScript, Vue, Nuxt.js, Node.js, Firebase and other third-party APIs.",
-    videoURL: "https://www.youtube.com/watch?v=ofWu0Mogv2Q&t=16s",
-  },
-  {
     image: doit4jesus,
     imageAlt: "Rosary App Main Page",
     title: "DoIt4Jesus",
@@ -125,30 +113,42 @@ export const PROJECTS = [
       "Next.js, JavaScript, TypeScript, React, CSS, Styled-Components, HTML, Git, Github  and other third-party APIs.",
   },
   {
-    image: cloudkitties,
-    imageAlt: "Cloud Kitchen Clone App Main Page",
-    title: "Cloud Kitties",
+    image: djtipme,
+    imageAlt: "DJ Tip App Main Page",
+    title: "DJTip.me",
     description:
-      "Cloud Kitties is a clone of DoorDash's admin panel, a food-sharing service. It handles huge amounts of data in an ever-growing table without diminishing the UX. The table component uses React Hooks to simplify the component's interface. The algorithm used in this app was influenced by an article published by Ying Jiang.",
-    websiteURL: "https://cloudkitchen.vercel.app/",
-    repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
-    objective:
-      "To have the web application run smoothly while receiving 10k orders of food and display it on a table.",
+      "DJs can accept song requests and tips from the audience in real-time. Request your favorite song and boost its priority with a tip!",
+    websiteURL: "https://djtip.me",
+    repositoryURL: "https://github.com/samsoftwaredev/djtips",
+    objective: "Request & Tip Your Favorite Songs",
     languages:
-      "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github, socket.io",
+      "Firebase Realtime Database, Firebase Auth, Stripe (payment systems), Next.js, React, JavaScript, TypeScript, CSS, HTML, Vercel(hosting), Git and other third-party APIs.",
   },
   {
-    image: portfolio,
-    imageAlt: "Website",
-    title: "Samuel's Portfolio",
+    image: alliespro,
+    imageAlt: "Website Home Page",
+    title: "AlliesPro",
     description:
-      "Samuel's Portfolio is a website to showcase my work, projects and skills. You can clone this repo and build your own portfolio. The code is easy to read and update.",
-    websiteURL: "https://samueldeveloper.com/",
-    repositoryURL: "https://github.com/samsoftwaredev/portfolio",
-    objective: "To show case my work, awards and skills.",
+      "AlliesPro is a gig search and payment web-app that started off as a simple chat to send and receive money. However, has evolved into a payment system that allows freelancers and clients to match, collaborate, and securely make money transactions. Freelancers can apply to gigs around their area and get paid on-time.",
+    objective:
+      "Send invoices that hold the client's money for a period of time. After any given date or goal has been reached the money will be deposited into the user's bank account.",
     languages:
-      "Next.js, React, TypeScript, JavaScript, Material UI, TypeScript, CSS, HTML, Git, GitHub, Google Forms.",
+      "HTML, CSS, JavaScript, Vue, Nuxt.js, Node.js, Firebase and other third-party APIs.",
+    videoURL: "https://www.youtube.com/watch?v=ofWu0Mogv2Q&t=16s",
   },
+  // {
+  //   image: cloudkitties,
+  //   imageAlt: "Cloud Kitchen Clone App Main Page",
+  //   title: "Cloud Kitties",
+  //   description:
+  //     "Cloud Kitties is a clone of DoorDash's admin panel, a food-sharing service. It handles huge amounts of data in an ever-growing table without diminishing the UX. The table component uses React Hooks to simplify the component's interface. The algorithm used in this app was influenced by an article published by Ying Jiang.",
+  //   websiteURL: "https://cloudkitchen.vercel.app/",
+  //   repositoryURL: "https://github.com/samsoftwaredev/cloudkitchen",
+  //   objective:
+  //     "To have the web application run smoothly while receiving 10k orders of food and display it on a table.",
+  //   languages:
+  //     "Next.js, JavaScript, TypeScript, React, CSS, SASS, HTML, Git, Github, socket.io",
+  // },
   // {
   //   image: finmily,
   //   imageAlt: "Website",
