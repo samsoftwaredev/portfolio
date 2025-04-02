@@ -7,3 +7,4 @@ export { default as finmily } from "./finmily.png";
 export { default as cloudkitties } from "./cloudkitties.png";
 export { default as doit4jesus } from "./doit4jesus.png";
 export { default as djtipme } from "./djtipme.png";
+export { default as mediumPost } from "./mediumPost.png";

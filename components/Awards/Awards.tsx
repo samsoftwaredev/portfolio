@@ -4,6 +4,7 @@ import { Typography, colors, Box, Button } from "@mui/material";
 import { Section } from "@/components";
 import { css } from "@/utils";
 import styles from "./awards.module.scss";
+import { mediumPost } from "../../public/projects";
 
 const Awards = () => {
   return (
@@ -14,9 +15,32 @@ const Awards = () => {
         gutterBottom
         className={css("primaryText", styles.title)}
       >
-        Awards & News
+        Awards & Blogs
       </Typography>
       <Element name="awards">
+        <Box className={styles.container}>
+          <Typography className={css(styles.subTitle, "subPrimaryText")}>
+            Medium Post - Using Micro Front-Ends (MFEs)
+          </Typography>
+          <Typography className={styles.content}>
+            Migrating a monolithic, tangled codebase is never easy, but with
+            Micro Frontends and a modular approach, we turned an unmaintainable
+            mess into a scalable, developer-friendly system. And the best part?
+            No more merge conflict nightmares.
+            <Button href="https://medium.com/@samueldeveloper/modernizing-a-mess-how-i-tamed-a-chaotic-codebase-with-micro-frontends-e823276251d2">
+              Read more...
+            </Button>
+          </Typography>
+          <Box className={styles.imageContainer}>
+            <Image
+              className={styles.image}
+              layout="fill"
+              alt="Spagetti Code Architecture"
+              src={mediumPost}
+              quality={100}
+            />
+          </Box>
+        </Box>
         <Box className={styles.container}>
           <Typography className={css(styles.subTitle, "subPrimaryText")}>
             FITHER - Video Game
@@ -39,7 +63,7 @@ const Awards = () => {
             />
           </Box>
         </Box>
-        <Box className={styles.container}>
+        <Box pt={2} className={styles.container}>
           <Typography className={css(styles.subTitle, "subPrimaryText")}>
             THE PIONEER NEWSPAPER
           </Typography>

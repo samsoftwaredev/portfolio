@@ -9,7 +9,7 @@ const nextConfig = {
     prependData: `@import "@/styles/variable.scss";`,
   },
   images: {
-    domains: ["ogeronimo.github.io"],
+    domains: ["ogeronimo.github.io", "miro.medium.com"],
   },
 };
 
