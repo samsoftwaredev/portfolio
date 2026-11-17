@@ -14,12 +14,20 @@ const securityHeaders = [
   },
 ];
 
+// GitHub Pages serves static files only: set STATIC_EXPORT=true to build `out/`.
+// (Security headers and the image optimizer need a Node host such as Vercel.)
+const isStatic = process.env.STATIC_EXPORT === "true";
+
 const nextConfig: NextConfig = {
+  ...(isStatic ? { output: "export" as const, trailingSlash: true } : {}),
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
-  images: { formats: ["image/avif", "image/webp"] },
+  images: isStatic
+    ? { unoptimized: true }
+    : { formats: ["image/avif", "image/webp"] },
   async headers() {
+    if (isStatic) return [];
     return [
       { source: "/:path*", headers: securityHeaders },
       {

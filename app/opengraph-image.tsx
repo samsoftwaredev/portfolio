@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 import { ImageResponse } from "next/og";
 import { SITE, OWNER } from "@/data/site";
 
