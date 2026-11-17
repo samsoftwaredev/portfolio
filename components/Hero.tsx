@@ -1,14 +1,18 @@
 import { OWNER, PROJECTS } from "@/data/site";
 import { yearsOfExperience } from "@/lib/utils";
 import { ArrowIcon } from "./Icons";
+import BinaryField from "./BinaryField";
+import HeroScene from "./HeroScene";
 
 export default function Hero({ now = new Date() }: { now?: Date }) {
   const years = yearsOfExperience(OWNER.careerStartedYear, now);
 
   return (
-    <section className="hero" aria-labelledby="hero-title">
+    <section className="hero" aria-labelledby="hero-title" data-hero>
       <div className="hero__glow" aria-hidden="true" />
+      <BinaryField />
       <div className="container hero__inner">
+        <div className="hero__copy">
         <p className="eyebrow hero__rise" style={{ "--i": 0 } as React.CSSProperties}>
           <span className="pulse" aria-hidden="true" />
           Available for new projects
@@ -42,6 +46,8 @@ export default function Hero({ now = new Date() }: { now?: Date }) {
             <dd>1st place</dd>
           </div>
         </dl>
+        </div>
+        <HeroScene />
       </div>
     </section>
   );

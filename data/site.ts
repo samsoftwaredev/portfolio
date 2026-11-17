@@ -99,6 +99,12 @@ export const PROJECTS: readonly Project[] = [
       "Built to rank for local searches and turn visitors into estimate requests.",
     stack: ["Next.js", "React", "TypeScript", "Local SEO", "Structured data"],
     websiteURL: "https://www.inripaintwall.com/",
+    image: {
+      src: "/images/inri-paint-and-wall.webp",
+      width: 1200,
+      height: 669,
+      alt: "INRI Paint & Wall home page: Painting and drywall repair in Garland, TX, with call, text and estimate buttons",
+    },
     featured: true,
   },
   {

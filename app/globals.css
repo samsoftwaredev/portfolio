@@ -327,6 +327,7 @@ main:focus { outline: none; }
   .grid--4 { grid-template-columns: repeat(4, 1fr); }
   .grid--3 { grid-template-columns: repeat(3, 1fr); }
   .project { grid-template-columns: 1fr 1fr; align-items: stretch; }
+  .project--featured { grid-template-columns: 1.35fr 1fr; }
   .project__media { aspect-ratio: auto; border-bottom: 0; border-right: 1px solid var(--border); min-height: 100%; }
   .project:nth-child(even) .project__media { order: 2; border-right: 0; border-left: 1px solid var(--border); }
   .project__body { padding: 2.25rem; align-self: center; }

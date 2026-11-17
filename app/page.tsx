@@ -6,6 +6,7 @@ import Awards from "@/components/Awards";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollEffects from "@/components/ScrollEffects";
 import JsonLd from "@/components/JsonLd";
 import { buildStructuredData } from "@/lib/structured-data";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <a href="#main" className="skip-link">
         Skip to main content
       </a>
+      <ScrollEffects />
       <Header />
       <main id="main" tabIndex={-1}>
         <span id="top" />
